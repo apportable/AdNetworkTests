@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "Chartboost.h"
+#import <RevMobAds/RevMobAds.h>
 
 #import "ViewController.h"
 
@@ -14,13 +16,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    //Chartboost config
+    Chartboost *cb = [Chartboost sharedChartboost];
+    cb.appId = @"5125833216ba47017000000c";
+    cb.appSignature = @"cb4f77e909672121e3011eae23f0be0887659aeb";
+    [cb startSession];
+    //Revmob config
+    [RevMobAds startSessionWithAppID:@"51bf7537795f1df64d000005"];
+    [RevMobAds session].testingMode = RevMobAdsTestingModeWithAds;
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        self.viewController = [[ViewController alloc] initWithNibName:@"ViewController_iPhone" bundle:nil];
-    } else {
-        self.viewController = [[ViewController alloc] initWithNibName:@"ViewController_iPad" bundle:nil];
-    }
+    self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;

@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "Chartboost.h"
+#import <RevMobAds/RevMobAds.h>
 
 @interface ViewController ()
 
@@ -24,6 +26,14 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)showChartboost:(id)sender {
+    [[Chartboost sharedChartboost] showInterstitial];
+}
+
+- (IBAction)showRevmob:(id)sender {
+    [[RevMobAds session] showFullscreen];
 }
 
 @end

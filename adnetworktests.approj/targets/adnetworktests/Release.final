@@ -1,0 +1,174 @@
+{
+    "xcode_project": "adnetworktests.xcodeproj", 
+    "java_sources": [], 
+    "pchs": [
+        "./adnetworktests/adnetworktests-Prefix.pch"
+    ], 
+    "assets": [
+        {
+            "asset": "adnetworktests/en.lproj/ViewController.xib", 
+            "target": null
+        }, 
+        {
+            "asset": "adnetworktests/Default.png", 
+            "target": "Default.png"
+        }, 
+        {
+            "asset": "adnetworktests/Default@2x.png", 
+            "target": "Default@2x.png"
+        }, 
+        {
+            "asset": "adnetworktests/Default-568h@2x.png", 
+            "target": "Default-568h@2x.png"
+        }, 
+        {
+            "asset": "adnetworktests/en.lproj/InfoPlist.strings", 
+            "target": "en.lproj/InfoPlist.strings"
+        }, 
+        {
+            "asset": "Chartboost/README.md", 
+            "target": "README.md"
+        }
+    ], 
+    "link_flags": [], 
+    "config": {
+        "FEATURES": [
+            "portrait"
+        ], 
+        "SHORT_VERSION": "1.0", 
+        "APPLICATION_NAME": "adnetworktests", 
+        "LONG_VERSION": "1.0", 
+        "APPLICATION_IDENTIFIER": "com.apportable.adnetworktests", 
+        "TEMPLATE_VALUES": {
+            "PRODUCT_NAME": "adnetworktests", 
+            "EXECUTABLE_NAME": "adnetworktests"
+        }, 
+        "APPLICATION_FULL_NAME": "adnetworktests"
+    }, 
+    "header_paths": [
+        {
+            "header_path": "adnetworktests-generated-files.hmap", 
+            "type": "iquote", 
+            "hmap": {}
+        }, 
+        {
+            "header_path": "adnetworktests-own-target-headers.hmap", 
+            "type": "I", 
+            "hmap": {}
+        }, 
+        {
+            "header_path": "adnetworktests-all-target-headers.hmap", 
+            "type": "I", 
+            "hmap": {}
+        }, 
+        {
+            "header_path": "adnetworktests-project-headers.hmap", 
+            "type": "iquote", 
+            "hmap": {
+                "ViewController.h": {
+                    "prefix": "adnetworktests/", 
+                    "suffix": "ViewController.h", 
+                    "key": "ViewController.h"
+                }, 
+                "Chartboost.h": {
+                    "prefix": "Chartboost/", 
+                    "suffix": "Chartboost.h", 
+                    "key": "Chartboost.h"
+                }, 
+                "adnetworktests-Prefix.pch": {
+                    "prefix": "adnetworktests/", 
+                    "suffix": "adnetworktests-Prefix.pch", 
+                    "key": "adnetworktests-Prefix.pch"
+                }, 
+                "AppDelegate.h": {
+                    "prefix": "adnetworktests/", 
+                    "suffix": "AppDelegate.h", 
+                    "key": "AppDelegate.h"
+                }
+            }
+        }
+    ], 
+    "modules": [], 
+    "sources": [
+        {
+            "source": "adnetworktests/AppDelegate.m", 
+            "header_paths": [], 
+            "flags": [], 
+            "language": "objc", 
+            "defines": {}
+        }, 
+        {
+            "source": "adnetworktests/ViewController.m", 
+            "header_paths": [], 
+            "flags": [], 
+            "language": "objc", 
+            "defines": {}
+        }, 
+        {
+            "source": "adnetworktests/main.m", 
+            "header_paths": [], 
+            "flags": [], 
+            "language": "objc", 
+            "defines": {}
+        }
+    ], 
+    "version": "1", 
+    "flags": [
+        "-DNS_BLOCK_ASSERTIONS=1", 
+        "-fwritable-strings", 
+        "-fobjc-arc", 
+        "-fasm-blocks", 
+        {
+            "flag": "-std=gnu99", 
+            "not_type": "c++"
+        }, 
+        {
+            "flag": "-fgnu-keywords", 
+            "not_type": "c++"
+        }, 
+        "-fno-asm", 
+        "-fpascal-strings", 
+        "-Wempty-body", 
+        "-Wno-deprecated-declarations", 
+        "-Wreturn-type", 
+        "-Wswitch", 
+        "-Wparentheses", 
+        "-Wformat", 
+        "-Wuninitialized", 
+        "-Wunused-value", 
+        "-Wunused-variable", 
+        {
+            "flag": "-Winvalid-offsetof", 
+            "type": "c++"
+        }, 
+        {
+            "flag": "-Wprotocol", 
+            "type": "objc"
+        }
+    ], 
+    "infoplists": [
+        "./adnetworktests/adnetworktests-Info.plist"
+    ], 
+    "deps": [
+        "UIKit", 
+        "QuartzCore", 
+        "StoreKit", 
+        "AdSupport", 
+        "SystemConfiguration", 
+        "UIKit", 
+        "Foundation", 
+        "CoreGraphics", 
+        "RevMobAds"
+    ], 
+    "libs": [
+        "Chartboost"
+    ], 
+    "java_sourcepaths": [], 
+    "java_res_dirs": [], 
+    "type": "app", 
+    "java_libs": [], 
+    "defines": {
+        "__IPHONE_OS_VERSION_MIN_REQUIRED": 60100, 
+        "NS_BLOCK_ASSERTIONS": 1
+    }
+}
