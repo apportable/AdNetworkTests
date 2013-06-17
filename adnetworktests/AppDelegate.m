@@ -18,11 +18,20 @@
 {
     //Chartboost config
     Chartboost *cb = [Chartboost sharedChartboost];
+#ifdef APPORTABLE
     cb.appId = @"5125833216ba47017000000c";
     cb.appSignature = @"cb4f77e909672121e3011eae23f0be0887659aeb";
+#else
+    cb.appId = @"5125786a17ba476d5000002d";
+    cb.appSignature = @"6c43009ec3ebccbd2ce7053e3313a78b4a3f4c07";
+#endif
     [cb startSession];
     //Revmob config
+#ifdef APPORTABLE
     [RevMobAds startSessionWithAppID:@"51bf7537795f1df64d000005"];
+#else
+    [RevMobAds startSessionWithAppID:@"515e0b9e1a112b1c0200000f"];
+#endif
     [RevMobAds session].testingMode = RevMobAdsTestingModeWithAds;
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

@@ -173,7 +173,9 @@
    
     // A list of dependencies.  Typically these correspond to
     // frameworks in the xcode project.
-    "deps": [],
+    "deps": [
+        "Chartboost",
+    ],
     
     // A list of source files (e.g. .m, .mm, .c, .cc, and .cpp) files to build.
     // Source files can be a string, e.g. "./main.c", or a dictionary specifying
@@ -290,7 +292,9 @@
     "java_res_dirs": [],
 
     //A list of libs to include with the APK
-    "libs":[],
+    "libs":[
+        "Chartboost"
+    ],
 
     //Additional linker (ld) flags.
     "link_flags":[],

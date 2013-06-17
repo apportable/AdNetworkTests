@@ -158,11 +158,10 @@
         "UIKit", 
         "Foundation", 
         "CoreGraphics", 
-        "RevMobAds"
-    ], 
-    "libs": [
+        "RevMobAds", 
         "Chartboost"
     ], 
+    "libs": [], 
     "java_sourcepaths": [], 
     "java_res_dirs": [], 
     "type": "app", 
