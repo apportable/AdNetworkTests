@@ -16,6 +16,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+#ifdef ANDROID
+    [UIScreen mainScreen].currentMode = [UIScreenMode emulatedMode:UIScreenBestEmulatedMode];
+#endif
     //Chartboost config
     Chartboost *cb = [Chartboost sharedChartboost];
 #ifdef APPORTABLE

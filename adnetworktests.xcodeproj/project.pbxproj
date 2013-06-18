@@ -356,6 +356,7 @@
 				219F8B4F176FB9AA00666305 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
