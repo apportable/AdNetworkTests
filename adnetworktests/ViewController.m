@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 #import "Chartboost.h"
+#if USE_REVMOB
 #import <RevMobAds/RevMobAds.h>
+#endif
 
 @interface ViewController ()
 
@@ -33,7 +35,11 @@
 }
 
 - (IBAction)showRevmob:(id)sender {
+#if USE_REVMOB
     [[RevMobAds session] showFullscreen];
+#else
+    [sender setTitle:@"Revmob is disabled" forState:UIControlStateNormal];
+#endif
 }
 
 @end

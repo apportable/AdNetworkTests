@@ -6,24 +6,24 @@
     ], 
     "assets": [
         {
+            "asset": "adnetworktests/Default.png", 
+            "target": "Default.png"
+        }, 
+        {
             "asset": "adnetworktests/Default@2x.png", 
             "target": "Default@2x.png"
+        }, 
+        {
+            "asset": "adnetworktests/en.lproj/InfoPlist.strings", 
+            "target": "en.lproj/InfoPlist.strings"
         }, 
         {
             "asset": "adnetworktests/Default-568h@2x.png", 
             "target": "Default-568h@2x.png"
         }, 
         {
-            "asset": "adnetworktests/Default.png", 
-            "target": "Default.png"
-        }, 
-        {
             "asset": "adnetworktests/en.lproj/ViewController.xib", 
             "target": null
-        }, 
-        {
-            "asset": "adnetworktests/en.lproj/InfoPlist.strings", 
-            "target": "en.lproj/InfoPlist.strings"
         }, 
         {
             "asset": "Chartboost/README.md", 

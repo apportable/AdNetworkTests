@@ -8,7 +8,9 @@
 
 #import "AppDelegate.h"
 #import "Chartboost.h"
+#if USE_REVMOB
 #import <RevMobAds/RevMobAds.h>
+#endif
 
 #import "ViewController.h"
 
@@ -29,6 +31,7 @@
     cb.appSignature = @"6c43009ec3ebccbd2ce7053e3313a78b4a3f4c07";
 #endif
     [cb startSession];
+#if USE_REVMOB
     //Revmob config
 #ifdef APPORTABLE
     [RevMobAds startSessionWithAppID:@"51bf7537795f1df64d000005"];
@@ -36,6 +39,7 @@
     [RevMobAds startSessionWithAppID:@"515e0b9e1a112b1c0200000f"];
 #endif
     [RevMobAds session].testingMode = RevMobAdsTestingModeWithAds;
+#endif
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
