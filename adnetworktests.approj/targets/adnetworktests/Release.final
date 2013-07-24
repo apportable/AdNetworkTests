@@ -33,7 +33,9 @@
     "link_flags": [], 
     "config": {
         "FEATURES": [
-            "portrait"
+            "portrait", 
+            "internet", 
+            "access_network_state"
         ], 
         "SHORT_VERSION": "1.0", 
         "APPLICATION_NAME": "adnetworktests", 
@@ -43,7 +45,10 @@
             "PRODUCT_NAME": "adnetworktests", 
             "EXECUTABLE_NAME": "adnetworktests"
         }, 
-        "APPLICATION_FULL_NAME": "adnetworktests"
+        "APPLICATION_FULL_NAME": "adnetworktests", 
+        "APPLICATION_MANIFEST_EXTRAS": [
+            "adnetworktests.approj/assets/AdMob/application_manifest_extras.xml"
+        ]
     }, 
     "header_paths": [
         {
