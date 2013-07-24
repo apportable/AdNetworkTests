@@ -25,6 +25,9 @@
 		219F8B5B176FBA8800666305 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219F8B5A176FBA8800666305 /* AdSupport.framework */; };
 		219F8B5D176FBA8D00666305 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219F8B5C176FBA8D00666305 /* StoreKit.framework */; };
 		219F8B5F176FBAA700666305 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219F8B5E176FBAA700666305 /* QuartzCore.framework */; };
+		21D08585179F5F5700B588DF /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21D08584179F5F5200B588DF /* libGoogleAdMobAds.a */; };
+		21D08587179F5FA400B588DF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21D08586179F5FA400B588DF /* AudioToolbox.framework */; };
+		21D08589179F5FAC00B588DF /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21D08588179F5FAC00B588DF /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,19 @@
 		219F8B5A176FBA8800666305 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		219F8B5C176FBA8D00666305 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		219F8B5E176FBAA700666305 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		21D0857A179F5F5200B588DF /* GADAdMobExtras.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADAdMobExtras.h; sourceTree = "<group>"; };
+		21D0857B179F5F5200B588DF /* GADAdNetworkExtras.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADAdNetworkExtras.h; sourceTree = "<group>"; };
+		21D0857C179F5F5200B588DF /* GADAdSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADAdSize.h; sourceTree = "<group>"; };
+		21D0857D179F5F5200B588DF /* GADBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADBannerView.h; sourceTree = "<group>"; };
+		21D0857E179F5F5200B588DF /* GADBannerViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADBannerViewDelegate.h; sourceTree = "<group>"; };
+		21D0857F179F5F5200B588DF /* GADInterstitial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADInterstitial.h; sourceTree = "<group>"; };
+		21D08580179F5F5200B588DF /* GADInterstitialDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADInterstitialDelegate.h; sourceTree = "<group>"; };
+		21D08581179F5F5200B588DF /* GADRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADRequest.h; sourceTree = "<group>"; };
+		21D08582179F5F5200B588DF /* GADRequestError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADRequestError.h; sourceTree = "<group>"; };
+		21D08583179F5F5200B588DF /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		21D08584179F5F5200B588DF /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAdMobAds.a; sourceTree = "<group>"; };
+		21D08586179F5FA400B588DF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		21D08588179F5FAC00B588DF /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21D08589179F5FAC00B588DF /* MessageUI.framework in Frameworks */,
+				21D08587179F5FA400B588DF /* AudioToolbox.framework in Frameworks */,
 				219F8B5F176FBAA700666305 /* QuartzCore.framework in Frameworks */,
 				219F8B5D176FBA8D00666305 /* StoreKit.framework in Frameworks */,
 				219F8B5B176FBA8800666305 /* AdSupport.framework in Frameworks */,
@@ -68,6 +86,7 @@
 				219F8B2F176FB9AA00666305 /* CoreGraphics.framework in Frameworks */,
 				219F8B54176FBA4000666305 /* libChartboost.a in Frameworks */,
 				219F8B57176FBA6A00666305 /* RevMobAds.framework in Frameworks */,
+				21D08585179F5F5700B588DF /* libGoogleAdMobAds.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +96,8 @@
 		219F8B1E176FB9AA00666305 = {
 			isa = PBXGroup;
 			children = (
+				21D08588179F5FAC00B588DF /* MessageUI.framework */,
+				21D08586179F5FA400B588DF /* AudioToolbox.framework */,
 				219F8B5E176FBAA700666305 /* QuartzCore.framework */,
 				219F8B5C176FBA8D00666305 /* StoreKit.framework */,
 				219F8B5A176FBA8800666305 /* AdSupport.framework */,
@@ -98,6 +119,17 @@
 		219F8B29176FB9AA00666305 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				21D0857A179F5F5200B588DF /* GADAdMobExtras.h */,
+				21D0857B179F5F5200B588DF /* GADAdNetworkExtras.h */,
+				21D0857C179F5F5200B588DF /* GADAdSize.h */,
+				21D0857D179F5F5200B588DF /* GADBannerView.h */,
+				21D0857E179F5F5200B588DF /* GADBannerViewDelegate.h */,
+				21D0857F179F5F5200B588DF /* GADInterstitial.h */,
+				21D08580179F5F5200B588DF /* GADInterstitialDelegate.h */,
+				21D08581179F5F5200B588DF /* GADRequest.h */,
+				21D08582179F5F5200B588DF /* GADRequestError.h */,
+				21D08583179F5F5200B588DF /* README.txt */,
+				21D08584179F5F5200B588DF /* libGoogleAdMobAds.a */,
 				219F8B56176FBA6A00666305 /* RevMobAds.framework */,
 				219F8B50176FBA4000666305 /* Chartboost */,
 				219F8B2A176FB9AA00666305 /* UIKit.framework */,
@@ -310,7 +342,9 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Chartboost\"",
+					"\"$(SRCROOT)\"",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -330,7 +364,9 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Chartboost\"",
+					"\"$(SRCROOT)\"",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;

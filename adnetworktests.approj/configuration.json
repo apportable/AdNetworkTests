@@ -175,6 +175,7 @@
     // frameworks in the xcode project.
     "deps": [
         "Chartboost",
+        "AdMob",
     ],
     
     // A list of source files (e.g. .m, .mm, .c, .cc, and .cpp) files to build.

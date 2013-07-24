@@ -21,7 +21,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    mBannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
+#ifdef APPORTABLE
+    mBannerView.adUnitID = @"a151ef2cfd3e120";
+#else
+    mBannerView.adUnitID = @"a151ef29a50747e";
+#endif
+    mBannerView.rootViewController = self;
+    [self.view addSubview:mBannerView];
+    GADRequest *request = [GADRequest request];
+    request.testDevices = [NSArray arrayWithObjects:GAD_SIMULATOR_ID, nil];
+    [mBannerView loadRequest:request];
 }
 
 - (void)didReceiveMemoryWarning

@@ -27,7 +27,8 @@
         "./adnetworktests/adnetworktests-Info.plist"
     ], 
     "libs": [
-        "Chartboost"
+        "Chartboost", 
+        "GoogleAdMobAds"
     ], 
     "defines": {
         "__IPHONE_OS_VERSION_MIN_REQUIRED": 60100, 
@@ -46,16 +47,16 @@
             "target": "Default@2x.png"
         }, 
         {
-            "asset": "adnetworktests/en.lproj/InfoPlist.strings", 
-            "target": "en.lproj/InfoPlist.strings"
-        }, 
-        {
             "asset": "adnetworktests/Default-568h@2x.png", 
             "target": "Default-568h@2x.png"
         }, 
         {
             "asset": "adnetworktests/en.lproj/ViewController.xib", 
             "target": null
+        }, 
+        {
+            "asset": "adnetworktests/en.lproj/InfoPlist.strings", 
+            "target": "en.lproj/InfoPlist.strings"
         }, 
         {
             "asset": "Chartboost/README.md", 
@@ -83,25 +84,70 @@
             "type": "iquote", 
             "header_path": "adnetworktests-project-headers.hmap", 
             "hmap": {
+                "GADAdMobExtras.h": {
+                    "prefix": "./", 
+                    "suffix": "GADAdMobExtras.h", 
+                    "key": "GADAdMobExtras.h"
+                }, 
+                "GADRequest.h": {
+                    "prefix": "./", 
+                    "suffix": "GADRequest.h", 
+                    "key": "GADRequest.h"
+                }, 
+                "AppDelegate.h": {
+                    "prefix": "adnetworktests/", 
+                    "suffix": "AppDelegate.h", 
+                    "key": "AppDelegate.h"
+                }, 
+                "GADBannerViewDelegate.h": {
+                    "prefix": "./", 
+                    "suffix": "GADBannerViewDelegate.h", 
+                    "key": "GADBannerViewDelegate.h"
+                }, 
                 "ViewController.h": {
                     "prefix": "adnetworktests/", 
                     "suffix": "ViewController.h", 
                     "key": "ViewController.h"
                 }, 
-                "Chartboost.h": {
-                    "prefix": "Chartboost/", 
-                    "suffix": "Chartboost.h", 
-                    "key": "Chartboost.h"
+                "GADBannerView.h": {
+                    "prefix": "./", 
+                    "suffix": "GADBannerView.h", 
+                    "key": "GADBannerView.h"
+                }, 
+                "GADAdSize.h": {
+                    "prefix": "./", 
+                    "suffix": "GADAdSize.h", 
+                    "key": "GADAdSize.h"
                 }, 
                 "adnetworktests-Prefix.pch": {
                     "prefix": "adnetworktests/", 
                     "suffix": "adnetworktests-Prefix.pch", 
                     "key": "adnetworktests-Prefix.pch"
                 }, 
-                "AppDelegate.h": {
-                    "prefix": "adnetworktests/", 
-                    "suffix": "AppDelegate.h", 
-                    "key": "AppDelegate.h"
+                "GADInterstitial.h": {
+                    "prefix": "./", 
+                    "suffix": "GADInterstitial.h", 
+                    "key": "GADInterstitial.h"
+                }, 
+                "Chartboost.h": {
+                    "prefix": "Chartboost/", 
+                    "suffix": "Chartboost.h", 
+                    "key": "Chartboost.h"
+                }, 
+                "GADAdNetworkExtras.h": {
+                    "prefix": "./", 
+                    "suffix": "GADAdNetworkExtras.h", 
+                    "key": "GADAdNetworkExtras.h"
+                }, 
+                "GADRequestError.h": {
+                    "prefix": "./", 
+                    "suffix": "GADRequestError.h", 
+                    "key": "GADRequestError.h"
+                }, 
+                "GADInterstitialDelegate.h": {
+                    "prefix": "./", 
+                    "suffix": "GADInterstitialDelegate.h", 
+                    "key": "GADInterstitialDelegate.h"
                 }
             }
         }
@@ -143,6 +189,8 @@
     ], 
     "deps": [
         "UIKit", 
+        "MessageUI", 
+        "AudioToolbox", 
         "QuartzCore", 
         "StoreKit", 
         "AdSupport", 
