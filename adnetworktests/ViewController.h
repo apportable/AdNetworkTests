@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "GADBannerView.h"
+#import "AdColonyPublic.h"
 
 @interface ViewController : UIViewController {
     GADBannerView *mBannerView;

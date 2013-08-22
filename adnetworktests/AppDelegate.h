@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AdColonyPublic.h"
 
 @class ViewController;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, AdColonyDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

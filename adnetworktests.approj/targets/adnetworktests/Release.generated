@@ -28,7 +28,8 @@
     ], 
     "libs": [
         "Chartboost", 
-        "GoogleAdMobAds"
+        "GoogleAdMobAds", 
+        "AdColony"
     ], 
     "defines": {
         "__IPHONE_OS_VERSION_MIN_REQUIRED": 60100, 
@@ -43,12 +44,12 @@
             "target": "Default.png"
         }, 
         {
-            "asset": "adnetworktests/Default@2x.png", 
-            "target": "Default@2x.png"
-        }, 
-        {
             "asset": "adnetworktests/Default-568h@2x.png", 
             "target": "Default-568h@2x.png"
+        }, 
+        {
+            "asset": "adnetworktests/Default@2x.png", 
+            "target": "Default@2x.png"
         }, 
         {
             "asset": "adnetworktests/en.lproj/ViewController.xib", 
@@ -98,6 +99,11 @@
                     "prefix": "adnetworktests/", 
                     "suffix": "AppDelegate.h", 
                     "key": "AppDelegate.h"
+                }, 
+                "AdColonyPublic.h": {
+                    "prefix": "./", 
+                    "suffix": "AdColonyPublic.h", 
+                    "key": "AdColonyPublic.h"
                 }, 
                 "GADBannerViewDelegate.h": {
                     "prefix": "./", 
@@ -189,11 +195,16 @@
     ], 
     "deps": [
         "UIKit", 
+        "EventKit", 
+        "CoreTelephony", 
+        "MediaPlayer", 
+        "CoreMedia", 
+        "CFNetwork", 
+        "AVFoundation", 
         "MessageUI", 
         "AudioToolbox", 
         "QuartzCore", 
         "StoreKit", 
-        "AdSupport", 
         "SystemConfiguration", 
         "UIKit", 
         "Foundation", 

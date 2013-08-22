@@ -44,6 +44,14 @@
     [[Chartboost sharedChartboost] showInterstitial];
 }
 
+- (IBAction)showAdColony:(id)sender {
+#ifdef APPORTABLE
+    [AdColonyPublic playVideoAdForZone:@"vzb71d88b9fb3e49f189908a"];
+#else
+    [AdColonyPublic playVideoAdForZone:@"vz9fe8f499eaf04128aa506c"];
+#endif
+}
+
 - (IBAction)showRevmob:(id)sender {
 #if USE_REVMOB
     [[RevMobAds session] showFullscreen];

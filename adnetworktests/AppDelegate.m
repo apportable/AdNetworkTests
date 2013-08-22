@@ -41,6 +41,9 @@
     [RevMobAds session].testingMode = RevMobAdsTestingModeWithAds;
 #endif
     
+    //AdColony config
+    [AdColonyPublic initAdColonyWithDelegate:self];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
@@ -74,6 +77,26 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark -- AdColonyDelegate methods
+
+- (NSString *)adColonyApplicationID {
+#ifdef APPORTABLE
+    return @"app3d6b109836f044908283cd";
+#else
+    return @"appcd4c2ca4996f4838b6bdfd";
+#endif
+}
+
+- (NSDictionary *)adColonyAdZoneNumberAssociation {
+#ifdef APPORTABLE
+    return [NSDictionary dictionaryWithObjectsAndKeys:
+            @"vzb71d88b9fb3e49f189908a", [NSNumber numberWithInt:1], nil];
+#else
+    return [NSDictionary dictionaryWithObjectsAndKeys:
+            @"vz9fe8f499eaf04128aa506c", [NSNumber numberWithInt:1], nil];
+#endif
 }
 
 @end
