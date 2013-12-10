@@ -42,7 +42,16 @@
 #endif
     
     //AdColony config
-    [AdColonyPublic initAdColonyWithDelegate:self];
+    NSArray *zoneIds = nil;
+    NSString *adColonyAppId = nil;
+#ifdef APPORTABLE
+    zoneIds = @[@"vzb71d88b9fb3e49f189908a"];
+    adColonyAppId = @"app3d6b109836f044908283cd";
+#else
+    zoneIds = @[@"vz9fe8f499eaf04128aa506c"];
+    adColonyAppId = @"appcd4c2ca4996f4838b6bdfd";
+#endif
+    [AdColony configureWithAppID:adColonyAppId zoneIDs:zoneIds delegate:self logging:YES];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.

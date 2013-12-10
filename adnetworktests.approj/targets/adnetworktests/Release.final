@@ -1,37 +1,37 @@
 {
-    "xcode_project": "adnetworktests.xcodeproj", 
-    "java_sources": [], 
-    "pchs": [
-        "./adnetworktests/adnetworktests-Prefix.pch"
-    ], 
     "assets": [
+        {
+            "asset": "adnetworktests/en.lproj/InfoPlist.strings", 
+            "target": "en.lproj/InfoPlist.strings"
+        }, 
         {
             "asset": "adnetworktests/Default.png", 
             "target": "Default.png"
-        }, 
-        {
-            "asset": "adnetworktests/Default-568h@2x.png", 
-            "target": "Default-568h@2x.png"
         }, 
         {
             "asset": "adnetworktests/Default@2x.png", 
             "target": "Default@2x.png"
         }, 
         {
-            "asset": "adnetworktests/en.lproj/ViewController.xib", 
-            "target": null
+            "asset": "adnetworktests/Default-568h@2x.png", 
+            "target": "Default-568h@2x.png"
         }, 
         {
-            "asset": "adnetworktests/en.lproj/InfoPlist.strings", 
-            "target": "en.lproj/InfoPlist.strings"
+            "asset": "adnetworktests/en.lproj/ViewController.xib", 
+            "target": null
         }, 
         {
             "asset": "Chartboost/README.md", 
             "target": "README.md"
         }
     ], 
-    "link_flags": [], 
     "config": {
+        "APPLICATION_FULL_NAME": "adnetworktests", 
+        "APPLICATION_IDENTIFIER": "com.apportable.adnetworktests", 
+        "APPLICATION_MANIFEST_EXTRAS": [
+            "adnetworktests.approj/assets/AdMob/application_manifest_extras.xml"
+        ], 
+        "APPLICATION_NAME": "adnetworktests", 
         "FEATURES": [
             "portrait", 
             "internet", 
@@ -39,140 +39,39 @@
             "read_phone_state", 
             "write_external_storage"
         ], 
-        "SHORT_VERSION": "1.0", 
-        "APPLICATION_NAME": "adnetworktests", 
         "LONG_VERSION": "1.0", 
-        "APPLICATION_IDENTIFIER": "com.apportable.adnetworktests", 
+        "SHORT_VERSION": "1.0", 
         "TEMPLATE_VALUES": {
-            "PRODUCT_NAME": "adnetworktests", 
-            "EXECUTABLE_NAME": "adnetworktests"
-        }, 
-        "APPLICATION_FULL_NAME": "adnetworktests", 
-        "APPLICATION_MANIFEST_EXTRAS": [
-            "adnetworktests.approj/assets/AdMob/application_manifest_extras.xml"
-        ]
+            "EXECUTABLE_NAME": "adnetworktests", 
+            "PRODUCT_NAME": "adnetworktests"
+        }
     }, 
-    "header_paths": [
-        {
-            "header_path": "adnetworktests-generated-files.hmap", 
-            "type": "iquote", 
-            "hmap": {}
-        }, 
-        {
-            "header_path": "adnetworktests-own-target-headers.hmap", 
-            "type": "I", 
-            "hmap": {}
-        }, 
-        {
-            "header_path": "adnetworktests-all-target-headers.hmap", 
-            "type": "I", 
-            "hmap": {}
-        }, 
-        {
-            "header_path": "adnetworktests-project-headers.hmap", 
-            "type": "iquote", 
-            "hmap": {
-                "GADAdMobExtras.h": {
-                    "prefix": "./", 
-                    "suffix": "GADAdMobExtras.h", 
-                    "key": "GADAdMobExtras.h"
-                }, 
-                "GADRequest.h": {
-                    "prefix": "./", 
-                    "suffix": "GADRequest.h", 
-                    "key": "GADRequest.h"
-                }, 
-                "AppDelegate.h": {
-                    "prefix": "adnetworktests/", 
-                    "suffix": "AppDelegate.h", 
-                    "key": "AppDelegate.h"
-                }, 
-                "AdColonyPublic.h": {
-                    "prefix": "./", 
-                    "suffix": "AdColonyPublic.h", 
-                    "key": "AdColonyPublic.h"
-                }, 
-                "GADBannerViewDelegate.h": {
-                    "prefix": "./", 
-                    "suffix": "GADBannerViewDelegate.h", 
-                    "key": "GADBannerViewDelegate.h"
-                }, 
-                "ViewController.h": {
-                    "prefix": "adnetworktests/", 
-                    "suffix": "ViewController.h", 
-                    "key": "ViewController.h"
-                }, 
-                "GADAdSize.h": {
-                    "prefix": "./", 
-                    "suffix": "GADAdSize.h", 
-                    "key": "GADAdSize.h"
-                }, 
-                "adnetworktests-Prefix.pch": {
-                    "prefix": "adnetworktests/", 
-                    "suffix": "adnetworktests-Prefix.pch", 
-                    "key": "adnetworktests-Prefix.pch"
-                }, 
-                "GADInterstitial.h": {
-                    "prefix": "./", 
-                    "suffix": "GADInterstitial.h", 
-                    "key": "GADInterstitial.h"
-                }, 
-                "Chartboost.h": {
-                    "prefix": "Chartboost/", 
-                    "suffix": "Chartboost.h", 
-                    "key": "Chartboost.h"
-                }, 
-                "GADAdNetworkExtras.h": {
-                    "prefix": "./", 
-                    "suffix": "GADAdNetworkExtras.h", 
-                    "key": "GADAdNetworkExtras.h"
-                }, 
-                "GADRequestError.h": {
-                    "prefix": "./", 
-                    "suffix": "GADRequestError.h", 
-                    "key": "GADRequestError.h"
-                }, 
-                "GADInterstitialDelegate.h": {
-                    "prefix": "./", 
-                    "suffix": "GADInterstitialDelegate.h", 
-                    "key": "GADInterstitialDelegate.h"
-                }, 
-                "GADBannerView.h": {
-                    "prefix": "./", 
-                    "suffix": "GADBannerView.h", 
-                    "key": "GADBannerView.h"
-                }
-            }
-        }
+    "defines": {
+        "NS_BLOCK_ASSERTIONS": 1, 
+        "__IPHONE_OS_VERSION_MIN_REQUIRED": 60100
+    }, 
+    "deps": [
+        "UIKit", 
+        "CoreMedia", 
+        "EventKit", 
+        "CoreTelephony", 
+        "MediaPlayer", 
+        "AdColony", 
+        "CFNetwork", 
+        "AVFoundation", 
+        "MessageUI", 
+        "AudioToolbox", 
+        "QuartzCore", 
+        "SystemConfiguration", 
+        "UIKit", 
+        "Foundation", 
+        "CoreGraphics", 
+        "RevMobAds", 
+        "Chartboost", 
+        "AdMob"
     ], 
-    "modules": [], 
-    "sources": [
-        {
-            "source": "adnetworktests/AppDelegate.m", 
-            "header_paths": [], 
-            "flags": [], 
-            "language": "objc", 
-            "defines": {}
-        }, 
-        {
-            "source": "adnetworktests/ViewController.m", 
-            "header_paths": [], 
-            "flags": [], 
-            "language": "objc", 
-            "defines": {}
-        }, 
-        {
-            "source": "adnetworktests/main.m", 
-            "header_paths": [], 
-            "flags": [], 
-            "language": "objc", 
-            "defines": {}
-        }
-    ], 
-    "version": "1", 
     "flags": [
         "-DNS_BLOCK_ASSERTIONS=1", 
-        "-fwritable-strings", 
         "-fobjc-arc", 
         "-fasm-blocks", 
         {
@@ -203,40 +102,134 @@
             "type": "objc"
         }
     ], 
+    "header_paths": [
+        {
+            "header_path": "adnetworktests-generated-files.hmap", 
+            "hmap": {}, 
+            "type": "iquote"
+        }, 
+        {
+            "header_path": "adnetworktests-own-target-headers.hmap", 
+            "hmap": {}, 
+            "type": "I"
+        }, 
+        {
+            "header_path": "adnetworktests-all-target-headers.hmap", 
+            "hmap": {}, 
+            "type": "I"
+        }, 
+        {
+            "header_path": "adnetworktests-project-headers.hmap", 
+            "hmap": {
+                "AppDelegate.h": {
+                    "key": "AppDelegate.h", 
+                    "prefix": "adnetworktests/", 
+                    "suffix": "AppDelegate.h"
+                }, 
+                "Chartboost.h": {
+                    "key": "Chartboost.h", 
+                    "prefix": "Chartboost/", 
+                    "suffix": "Chartboost.h"
+                }, 
+                "GADAdMobExtras.h": {
+                    "key": "GADAdMobExtras.h", 
+                    "prefix": "./", 
+                    "suffix": "GADAdMobExtras.h"
+                }, 
+                "GADAdNetworkExtras.h": {
+                    "key": "GADAdNetworkExtras.h", 
+                    "prefix": "./", 
+                    "suffix": "GADAdNetworkExtras.h"
+                }, 
+                "GADAdSize.h": {
+                    "key": "GADAdSize.h", 
+                    "prefix": "./", 
+                    "suffix": "GADAdSize.h"
+                }, 
+                "GADBannerView.h": {
+                    "key": "GADBannerView.h", 
+                    "prefix": "./", 
+                    "suffix": "GADBannerView.h"
+                }, 
+                "GADBannerViewDelegate.h": {
+                    "key": "GADBannerViewDelegate.h", 
+                    "prefix": "./", 
+                    "suffix": "GADBannerViewDelegate.h"
+                }, 
+                "GADInterstitial.h": {
+                    "key": "GADInterstitial.h", 
+                    "prefix": "./", 
+                    "suffix": "GADInterstitial.h"
+                }, 
+                "GADInterstitialDelegate.h": {
+                    "key": "GADInterstitialDelegate.h", 
+                    "prefix": "./", 
+                    "suffix": "GADInterstitialDelegate.h"
+                }, 
+                "GADRequest.h": {
+                    "key": "GADRequest.h", 
+                    "prefix": "./", 
+                    "suffix": "GADRequest.h"
+                }, 
+                "GADRequestError.h": {
+                    "key": "GADRequestError.h", 
+                    "prefix": "./", 
+                    "suffix": "GADRequestError.h"
+                }, 
+                "ViewController.h": {
+                    "key": "ViewController.h", 
+                    "prefix": "adnetworktests/", 
+                    "suffix": "ViewController.h"
+                }, 
+                "adnetworktests-Prefix.pch": {
+                    "key": "adnetworktests-Prefix.pch", 
+                    "prefix": "adnetworktests/", 
+                    "suffix": "adnetworktests-Prefix.pch"
+                }
+            }, 
+            "type": "iquote"
+        }
+    ], 
     "infoplists": [
         "./adnetworktests/adnetworktests-Info.plist"
     ], 
-    "deps": [
-        "UIKit", 
-        "EventKit", 
-        "CoreTelephony", 
-        "MediaPlayer", 
-        "CoreMedia", 
-        "CFNetwork", 
-        "AVFoundation", 
-        "MessageUI", 
-        "AudioToolbox", 
-        "QuartzCore", 
-        "StoreKit", 
-        "SystemConfiguration", 
-        "UIKit", 
-        "Foundation", 
-        "CoreGraphics", 
-        "RevMobAds", 
-        "Chartboost", 
-        "AdMob", 
-        "AdColony"
-    ], 
-    "libs": [
-        "GoogleAdMobAds", 
-        "AdColony"
-    ], 
-    "java_sourcepaths": [], 
-    "java_res_dirs": [], 
-    "type": "app", 
     "java_libs": [], 
-    "defines": {
-        "__IPHONE_OS_VERSION_MIN_REQUIRED": 60100, 
-        "NS_BLOCK_ASSERTIONS": 1
-    }
+    "java_res_dirs": [], 
+    "java_sourcepaths": [], 
+    "java_sources": [], 
+    "libs": [
+        "z.1.2.5", 
+        "GoogleAdMobAds"
+    ], 
+    "link_flags": [], 
+    "modules": [], 
+    "pchs": [
+        "./adnetworktests/adnetworktests-Prefix.pch"
+    ], 
+    "sources": [
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "adnetworktests/AppDelegate.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "adnetworktests/ViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "adnetworktests/main.m"
+        }
+    ], 
+    "type": "app", 
+    "version": "1", 
+    "xcode_project": "adnetworktests.xcodeproj"
 }

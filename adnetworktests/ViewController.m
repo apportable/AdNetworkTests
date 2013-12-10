@@ -46,9 +46,9 @@
 
 - (IBAction)showAdColony:(id)sender {
 #ifdef APPORTABLE
-    [AdColonyPublic playVideoAdForZone:@"vzb71d88b9fb3e49f189908a"];
+    [AdColony playVideoAdForZone:@"vzb71d88b9fb3e49f189908a" withDelegate:nil];
 #else
-    [AdColonyPublic playVideoAdForZone:@"vz9fe8f499eaf04128aa506c"];
+    [AdColony playVideoAdForZone:@"vz9fe8f499eaf04128aa506c" withDelegate:nil];
 #endif
 }
 
