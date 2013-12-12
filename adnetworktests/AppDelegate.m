@@ -45,7 +45,7 @@
     NSArray *zoneIds = nil;
     NSString *adColonyAppId = nil;
 #ifdef APPORTABLE
-    zoneIds = @[@"vzb71d88b9fb3e49f189908a"];
+    zoneIds = @[@"vzb71d88b9fb3e49f189908a", @"vz8d2d1f791d8849fdbf"];
     adColonyAppId = @"app3d6b109836f044908283cd";
 #else
     zoneIds = @[@"vz9fe8f499eaf04128aa506c"];
@@ -90,22 +90,8 @@
 
 #pragma mark -- AdColonyDelegate methods
 
-- (NSString *)adColonyApplicationID {
-#ifdef APPORTABLE
-    return @"app3d6b109836f044908283cd";
-#else
-    return @"appcd4c2ca4996f4838b6bdfd";
-#endif
-}
-
-- (NSDictionary *)adColonyAdZoneNumberAssociation {
-#ifdef APPORTABLE
-    return [NSDictionary dictionaryWithObjectsAndKeys:
-            @"vzb71d88b9fb3e49f189908a", [NSNumber numberWithInt:1], nil];
-#else
-    return [NSDictionary dictionaryWithObjectsAndKeys:
-            @"vz9fe8f499eaf04128aa506c", [NSNumber numberWithInt:1], nil];
-#endif
+- ( void ) onAdColonyV4VCReward:(BOOL)success currencyName:(NSString*)currencyName currencyAmount:(int)amount inZone:(NSString*)zoneID {
+    NSLog(@"adcolony recieved onAdColonyV4VCReward in app success: %d currencyName: %@ currencyAmount: %d", success, currencyName, amount);
 }
 
 @end

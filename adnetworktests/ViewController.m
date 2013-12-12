@@ -12,7 +12,7 @@
 #import <RevMobAds/RevMobAds.h>
 #endif
 
-@interface ViewController ()
+@interface ViewController () <AdColonyAdDelegate>
 
 @end
 
@@ -46,7 +46,7 @@
 
 - (IBAction)showAdColony:(id)sender {
 #ifdef APPORTABLE
-    [AdColony playVideoAdForZone:@"vzb71d88b9fb3e49f189908a" withDelegate:nil];
+    [AdColony playVideoAdForZone:@"vz8d2d1f791d8849fdbf" withDelegate:self];
 #else
     [AdColony playVideoAdForZone:@"vz9fe8f499eaf04128aa506c" withDelegate:nil];
 #endif
@@ -58,6 +58,14 @@
 #else
     [sender setTitle:@"Revmob is disabled" forState:UIControlStateNormal];
 #endif
+}
+
+- ( void ) onAdColonyAdAttemptFinished:(BOOL)shown inZone:( NSString * )zoneID {
+    NSLog(@"adcolony recieved onAdColonyAdAttemptFinished in app");
+}
+
+- ( void ) onAdColonyAdStartedInZone:( NSString * )zoneID {
+    NSLog(@"adcolony recieved onAdColonyAdStartedInZone in app");
 }
 
 @end
