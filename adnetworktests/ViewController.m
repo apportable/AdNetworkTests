@@ -46,7 +46,10 @@
 
 - (IBAction)showAdColony:(id)sender {
 #ifdef APPORTABLE
+//    Use the following line to show a non-rewarded video
     [AdColony playVideoAdForZone:@"vz8d2d1f791d8849fdbf" withDelegate:self];
+//    Use the following line to show a rewarded video
+//    [AdColony playVideoAdForZone:@"vzb71d88b9fb3e49f189908a" withDelegate:nil withV4VCPrePopup:YES andV4VCPostPopup:YES];
 #else
     [AdColony playVideoAdForZone:@"vz9fe8f499eaf04128aa506c" withDelegate:nil];
 #endif
