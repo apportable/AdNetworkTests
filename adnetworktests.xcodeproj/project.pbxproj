@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		213DE79717C57E35006459FC /* libAdColony.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 213DE79617C57E34006459FC /* libAdColony.a */; };
 		213DE79917C57E7A006459FC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213DE79817C57E7A006459FC /* AVFoundation.framework */; };
 		213DE79B17C57E86006459FC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213DE79A17C57E86006459FC /* CFNetwork.framework */; };
 		213DE79D17C57E96006459FC /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213DE79C17C57E95006459FC /* CoreMedia.framework */; };
@@ -30,16 +29,18 @@
 		219F8B57176FBA6A00666305 /* RevMobAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219F8B56176FBA6A00666305 /* RevMobAds.framework */; };
 		219F8B59176FBA8100666305 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219F8B58176FBA8100666305 /* SystemConfiguration.framework */; };
 		219F8B5B176FBA8800666305 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219F8B5A176FBA8800666305 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		219F8B5D176FBA8D00666305 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219F8B5C176FBA8D00666305 /* StoreKit.framework */; };
+		219F8B5D176FBA8D00666305 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219F8B5C176FBA8D00666305 /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		219F8B5F176FBAA700666305 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219F8B5E176FBAA700666305 /* QuartzCore.framework */; };
+		21BC285A1856978100F5967E /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BC28591856978100F5967E /* AdColony.framework */; };
+		21BC285C18569BA700F5967E /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BC285B18569BA700F5967E /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		21BC285E18569BE000F5967E /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BC285D18569BE000F5967E /* EventKitUI.framework */; };
+		21BC286018569C4C00F5967E /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BC285F18569C4C00F5967E /* libz.1.2.5.dylib */; };
 		21D08585179F5F5700B588DF /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21D08584179F5F5200B588DF /* libGoogleAdMobAds.a */; };
 		21D08587179F5FA400B588DF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21D08586179F5FA400B588DF /* AudioToolbox.framework */; };
 		21D08589179F5FAC00B588DF /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21D08588179F5FAC00B588DF /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		213DE79517C57E34006459FC /* AdColonyPublic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdColonyPublic.h; sourceTree = "<group>"; };
-		213DE79617C57E34006459FC /* libAdColony.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAdColony.a; sourceTree = "<group>"; };
 		213DE79817C57E7A006459FC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		213DE79A17C57E86006459FC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		213DE79C17C57E95006459FC /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -70,6 +71,10 @@
 		219F8B5A176FBA8800666305 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		219F8B5C176FBA8D00666305 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		219F8B5E176FBAA700666305 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		21BC28591856978100F5967E /* AdColony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdColony.framework; sourceTree = "<group>"; };
+		21BC285B18569BA700F5967E /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		21BC285D18569BE000F5967E /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		21BC285F18569C4C00F5967E /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		21D0857A179F5F5200B588DF /* GADAdMobExtras.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADAdMobExtras.h; sourceTree = "<group>"; };
 		21D0857B179F5F5200B588DF /* GADAdNetworkExtras.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADAdNetworkExtras.h; sourceTree = "<group>"; };
 		21D0857C179F5F5200B588DF /* GADAdSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADAdSize.h; sourceTree = "<group>"; };
@@ -90,17 +95,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21BC286018569C4C00F5967E /* libz.1.2.5.dylib in Frameworks */,
+				21BC285C18569BA700F5967E /* Social.framework in Frameworks */,
+				21BC285E18569BE000F5967E /* EventKitUI.framework in Frameworks */,
+				213DE79D17C57E96006459FC /* CoreMedia.framework in Frameworks */,
+				219F8B5B176FBA8800666305 /* AdSupport.framework in Frameworks */,
 				213DE7A317C57F04006459FC /* EventKit.framework in Frameworks */,
 				213DE7A117C57EF9006459FC /* CoreTelephony.framework in Frameworks */,
 				213DE79F17C57E9E006459FC /* MediaPlayer.framework in Frameworks */,
-				213DE79D17C57E96006459FC /* CoreMedia.framework in Frameworks */,
+				21BC285A1856978100F5967E /* AdColony.framework in Frameworks */,
 				213DE79B17C57E86006459FC /* CFNetwork.framework in Frameworks */,
 				213DE79917C57E7A006459FC /* AVFoundation.framework in Frameworks */,
 				21D08589179F5FAC00B588DF /* MessageUI.framework in Frameworks */,
 				21D08587179F5FA400B588DF /* AudioToolbox.framework in Frameworks */,
 				219F8B5F176FBAA700666305 /* QuartzCore.framework in Frameworks */,
 				219F8B5D176FBA8D00666305 /* StoreKit.framework in Frameworks */,
-				219F8B5B176FBA8800666305 /* AdSupport.framework in Frameworks */,
 				219F8B59176FBA8100666305 /* SystemConfiguration.framework in Frameworks */,
 				219F8B2B176FB9AA00666305 /* UIKit.framework in Frameworks */,
 				219F8B2D176FB9AA00666305 /* Foundation.framework in Frameworks */,
@@ -108,7 +117,6 @@
 				219F8B54176FBA4000666305 /* libChartboost.a in Frameworks */,
 				219F8B57176FBA6A00666305 /* RevMobAds.framework in Frameworks */,
 				21D08585179F5F5700B588DF /* libGoogleAdMobAds.a in Frameworks */,
-				213DE79717C57E35006459FC /* libAdColony.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,8 +155,10 @@
 		219F8B29176FB9AA00666305 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				213DE79517C57E34006459FC /* AdColonyPublic.h */,
-				213DE79617C57E34006459FC /* libAdColony.a */,
+				21BC285F18569C4C00F5967E /* libz.1.2.5.dylib */,
+				21BC285D18569BE000F5967E /* EventKitUI.framework */,
+				21BC285B18569BA700F5967E /* Social.framework */,
+				21BC28591856978100F5967E /* AdColony.framework */,
 				21D0857A179F5F5200B588DF /* GADAdMobExtras.h */,
 				21D0857B179F5F5200B588DF /* GADAdNetworkExtras.h */,
 				21D0857C179F5F5200B588DF /* GADAdSize.h */,
@@ -364,7 +374,8 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
+					/Users/glenna/workspace/pickles/dcf/Applications/adnetworktests,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "adnetworktests/adnetworktests-Prefix.pch";
@@ -386,7 +397,8 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
+					/Users/glenna/workspace/pickles/dcf/Applications/adnetworktests,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "adnetworktests/adnetworktests-Prefix.pch";

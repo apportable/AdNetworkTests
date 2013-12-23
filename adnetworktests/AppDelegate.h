@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AdColonyPublic.h"
+#import <AdColony/AdColony.h>
 
 @class ViewController;
 

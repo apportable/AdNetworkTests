@@ -1,24 +1,24 @@
 {
     "assets": [
         {
-            "asset": "adnetworktests/Default.png", 
-            "target": "Default.png"
+            "asset": "adnetworktests/en.lproj/InfoPlist.strings", 
+            "target": "en.lproj/InfoPlist.strings"
         }, 
         {
-            "asset": "adnetworktests/Default-568h@2x.png", 
-            "target": "Default-568h@2x.png"
+            "asset": "adnetworktests/Default.png", 
+            "target": "Default.png"
         }, 
         {
             "asset": "adnetworktests/Default@2x.png", 
             "target": "Default@2x.png"
         }, 
         {
-            "asset": "adnetworktests/en.lproj/ViewController.xib", 
-            "target": null
+            "asset": "adnetworktests/Default-568h@2x.png", 
+            "target": "Default-568h@2x.png"
         }, 
         {
-            "asset": "adnetworktests/en.lproj/InfoPlist.strings", 
-            "target": "en.lproj/InfoPlist.strings"
+            "asset": "adnetworktests/en.lproj/ViewController.xib", 
+            "target": null
         }, 
         {
             "asset": "Chartboost/README.md", 
@@ -52,28 +52,26 @@
     }, 
     "deps": [
         "UIKit", 
+        "CoreMedia", 
         "EventKit", 
         "CoreTelephony", 
         "MediaPlayer", 
-        "CoreMedia", 
+        "AdColony", 
         "CFNetwork", 
         "AVFoundation", 
         "MessageUI", 
         "AudioToolbox", 
         "QuartzCore", 
-        "StoreKit", 
         "SystemConfiguration", 
         "UIKit", 
         "Foundation", 
         "CoreGraphics", 
         "RevMobAds", 
         "Chartboost", 
-        "AdMob", 
-        "AdColony"
+        "AdMob"
     ], 
     "flags": [
         "-DNS_BLOCK_ASSERTIONS=1", 
-        "-fwritable-strings", 
         "-fobjc-arc", 
         "-fasm-blocks", 
         {
@@ -123,11 +121,6 @@
         {
             "header_path": "adnetworktests-project-headers.hmap", 
             "hmap": {
-                "AdColonyPublic.h": {
-                    "key": "AdColonyPublic.h", 
-                    "prefix": "./", 
-                    "suffix": "AdColonyPublic.h"
-                }, 
                 "AppDelegate.h": {
                     "key": "AppDelegate.h", 
                     "prefix": "adnetworktests/", 
@@ -205,8 +198,8 @@
     "java_sourcepaths": [], 
     "java_sources": [], 
     "libs": [
-        "GoogleAdMobAds", 
-        "AdColony"
+        "z.1.2.5", 
+        "GoogleAdMobAds"
     ], 
     "link_flags": [], 
     "modules": [], 

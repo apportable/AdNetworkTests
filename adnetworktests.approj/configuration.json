@@ -260,7 +260,9 @@
    
     // A list of dependencies.  Typically these correspond to
     // frameworks in the xcode project.
-    "deps": [],
+    "deps": [
+        "EventKitUI"
+    ],
     
     // A list of source files (e.g. .m, .mm, .c, .cc, and .cpp) files to remove from the build.
     // e.g. "./External/Reachabilty/Reachability.m"

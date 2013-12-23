@@ -13,7 +13,7 @@
 #import <RevMobAds/RevMobAds.h>
 #endif
 
-@interface ViewController ()
+@interface ViewController () <AdColonyAdDelegate>
 
 @end
 
@@ -53,9 +53,12 @@
 
 - (IBAction)showAdColony:(id)sender {
 #ifdef APPORTABLE
-    [AdColonyPublic playVideoAdForZone:@"vzb71d88b9fb3e49f189908a"];
+//    Use the following line to show a non-rewarded video
+    [AdColony playVideoAdForZone:@"vz8d2d1f791d8849fdbf" withDelegate:self];
+//    Use the following line to show a rewarded video
+//    [AdColony playVideoAdForZone:@"vzb71d88b9fb3e49f189908a" withDelegate:nil withV4VCPrePopup:YES andV4VCPostPopup:YES];
 #else
-    [AdColonyPublic playVideoAdForZone:@"vz9fe8f499eaf04128aa506c"];
+    [AdColony playVideoAdForZone:@"vz9fe8f499eaf04128aa506c" withDelegate:nil];
 #endif
 }
 
@@ -96,19 +99,24 @@
     NSLog(@"**** MoPub Interstitial load failed.");
 }
 
-- (void)interstitialDidReceiveAd:(GADInterstitial *)interstitial
-{
+- (void)interstitialDidReceiveAd:(GADInterstitial *)interstitial {
     NSLog(@"**** MoPub Interstitial did load.");
 }
 
-- (void)interstitialWillPresentScreen:(GADInterstitial *)interstitial
-{
+- (void)interstitialWillPresentScreen:(GADInterstitial *)interstitial {
 
 }
 
-- (void)interstitialDidDismissScreen:(GADInterstitial *)interstitial
-{
+- (void)interstitialDidDismissScreen:(GADInterstitial *)interstitial {
     [self reloadInterstitial];
+}
+
+- ( void ) onAdColonyAdAttemptFinished:(BOOL)shown inZone:( NSString * )zoneID {
+    NSLog(@"adcolony recieved onAdColonyAdAttemptFinished in app");
+}
+
+- ( void ) onAdColonyAdStartedInZone:( NSString * )zoneID {
+    NSLog(@"adcolony recieved onAdColonyAdStartedInZone in app");
 }
 
 @end
