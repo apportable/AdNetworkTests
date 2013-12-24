@@ -30,13 +30,11 @@
 #endif
     mBannerView.rootViewController = self;
     CGRect frame = mBannerView.frame;
-    mBannerView.hidden = YES;
     mBannerView.frame = frame;
     [self.view addSubview:mBannerView];
     GADRequest *request = [GADRequest request];
     request.testDevices = [NSArray arrayWithObjects:GAD_SIMULATOR_ID, nil];
     [mBannerView loadRequest:request];
-
 
     [self loadInterstitial];
 }
