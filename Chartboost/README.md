@@ -36,7 +36,7 @@ Integrating Chartboost takes two easy steps:
 
 ### Dive deeper
 
-For more common use cases, visit our [online documentation](url).
+For more common use cases, visit our [online documentation](http://docs.apportable.com/sample-apps.html#adnetworktests).
 
 Check out our header file `Chartboost.h` for the full API
 specification.
