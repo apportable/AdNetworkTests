@@ -31,6 +31,7 @@
     mBannerView.rootViewController = self;
     CGRect frame = mBannerView.frame;
     mBannerView.frame = frame;
+    mBannerView.delegate = self;
     [self.view addSubview:mBannerView];
     GADRequest *request = [GADRequest request];
     request.testDevices = [NSArray arrayWithObjects:GAD_SIMULATOR_ID, nil];
@@ -75,6 +76,12 @@
     }
 }
 
+- (IBAction)pressed:(id)sender {
+//    mBannerView.hidden = !mBannerView.hidden;
+    [mBannerView removeFromSuperview];
+
+}
+
 #pragma mark - Private
 
 - (void)loadInterstitial
@@ -117,4 +124,50 @@
     NSLog(@"adcolony recieved onAdColonyAdStartedInZone in app");
 }
 
+
+#pragma -mark GADBannerViewDelegate
+
+- (void)adViewDidReceiveAd:(GADBannerView *)view {
+    NSLog(@"admobview did receivedAD");
+}
+
+- (void)adView:(GADBannerView *)view didFailToReceiveAdWithError:(GADRequestError *)error {
+    NSLog(@"admobview didFailToReceiveAdWithError");
+}
+
+- (void)adViewWillPresentScreen:(GADBannerView *)adView {
+    NSLog(@"admobview adViewWillPresentScreen");
+}
+
+- (void)adViewWillDismissScreen:(GADBannerView *)adView {
+    NSLog(@"admobview adViewWillDismissScreen");
+}
+
+- (void)adViewDidDismissScreen:(GADBannerView *)adView {
+    NSLog(@"admobview adViewDidDismissScreen");
+}
+
+- (void)adViewWillLeaveApplication:(GADBannerView *)adView {
+    NSLog(@"admobview adViewWillLeaveApplication");
+}
+
+
+#if APPORTABLE
+- (void)buttonUpWithEvent:(UIEvent *)event
+{
+    switch (event.buttonCode) {
+        case UIEventButtonCodeBack:
+            break;
+        case UIEventButtonCodeMenu:
+            break;
+        default:
+            break;
+    }
+}
+#endif
+
+- (BOOL)canBecomeFirstResponder
+{
+    return YES;
+}
 @end

@@ -115,8 +115,8 @@
 				219F8B2D176FB9AA00666305 /* Foundation.framework in Frameworks */,
 				219F8B2F176FB9AA00666305 /* CoreGraphics.framework in Frameworks */,
 				219F8B54176FBA4000666305 /* libChartboost.a in Frameworks */,
-				219F8B57176FBA6A00666305 /* RevMobAds.framework in Frameworks */,
 				21D08585179F5F5700B588DF /* libGoogleAdMobAds.a in Frameworks */,
+				219F8B57176FBA6A00666305 /* RevMobAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,7 +383,9 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Chartboost\"",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Chartboost",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -406,7 +408,9 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Chartboost\"",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Chartboost",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

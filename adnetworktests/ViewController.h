@@ -11,7 +11,7 @@
 #import "GADInterstitial.h"
 #import <AdColony/AdColony.h>
 
-@interface ViewController : UIViewController <GADInterstitialDelegate> {
+@interface ViewController : UIViewController <GADInterstitialDelegate, GADBannerViewDelegate> {
     GADBannerView *mBannerView;
     GADInterstitial *mInterstitial;
 }

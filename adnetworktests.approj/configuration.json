@@ -216,7 +216,7 @@
     "java_libs": [],
 
     //A list of java resource directories
-    "java_res_dirs": [],
+    "java_res_dirs": ['apportable/res'],
 
     //A list of libs to include with the APK
     "libs":[],

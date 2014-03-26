@@ -17,10 +17,6 @@
             "target": "Default-568h@2x.png"
         }, 
         {
-            "asset": "adnetworktests/en.lproj/ViewController.xib", 
-            "target": null
-        }, 
-        {
             "asset": "Chartboost/README.md", 
             "target": "README.md"
         }
@@ -61,6 +57,10 @@
     ], 
     "flags": [
         "-DNS_BLOCK_ASSERTIONS=1", 
+        {
+            "flag": "-DNS_BLOCK_ASSERTIONS=1", 
+            "type": "c++"
+        }, 
         "-fobjc-arc", 
         "-fasm-blocks", 
         {
@@ -177,6 +177,22 @@
                 }
             }, 
             "type": "iquote"
+        }, 
+        {
+            "header_path": "/var/folders/k8/3d9wq0210k73lxmt0zw8zfcr0000gn/T/tmpEKzqHX/BUILT_PRODUCTS_DIR/include", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "/var/folders/k8/3d9wq0210k73lxmt0zw8zfcr0000gn/T/tmpEKzqHX/DERIVED_FILE_DIR/armv7", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "/var/folders/k8/3d9wq0210k73lxmt0zw8zfcr0000gn/T/tmpEKzqHX/DERIVED_FILE_DIR", 
+            "type": "I"
         }
     ], 
     "infoplists": [
@@ -214,7 +230,14 @@
             "source": "adnetworktests/main.m"
         }
     ], 
+    "storyboards": [], 
     "type": "app", 
-    "version": "1", 
-    "xcode_project": "adnetworktests.xcodeproj"
+    "version": "3", 
+    "xcode_project": "adnetworktests.xcodeproj", 
+    "xibs": [
+        {
+            "target": null, 
+            "xib": "adnetworktests/en.lproj/ViewController.xib"
+        }
+    ]
 }
