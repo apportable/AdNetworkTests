@@ -10,9 +10,7 @@
 #import "Chartboost.h"
 #import "AppDelegate.h"
 #import "Flurry.h"
-#if USE_REVMOB
 #import <RevMobAds/RevMobAds.h>
-#endif
 
 @interface ViewController () <AdColonyAdDelegate>
 
@@ -65,11 +63,7 @@
 }
 
 - (IBAction)showRevmob:(id)sender {
-#if USE_REVMOB
     [[RevMobAds session] showFullscreen];
-#else
-    [sender setTitle:@"Revmob is disabled" forState:UIControlStateNormal];
-#endif
     [Flurry logEvent:@"showRevMob"];
 }
 
