@@ -1,6 +1,10 @@
 {
     "assets": [
         {
+            "asset": "Vungle/resources/vg_button_mute_plain.png", 
+            "target": "vg_button_mute_plain.png"
+        }, 
+        {
             "asset": "adnetworktests/en.lproj/InfoPlist.strings", 
             "target": "en.lproj/InfoPlist.strings"
         }, 
@@ -9,12 +13,20 @@
             "target": "Default.png"
         }, 
         {
+            "asset": "Vungle/resources/vg_button_close.png", 
+            "target": "vg_button_close.png"
+        }, 
+        {
             "asset": "adnetworktests/Default@2x.png", 
             "target": "Default@2x.png"
         }, 
         {
             "asset": "adnetworktests/Default-568h@2x.png", 
             "target": "Default-568h@2x.png"
+        }, 
+        {
+            "asset": "Vungle/resources/vg_button_mute_selected.png", 
+            "target": "vg_button_mute_selected.png"
         }, 
         {
             "asset": "Chartboost/README.md", 
@@ -48,6 +60,7 @@
     }, 
     "deps": [
         "UIKit", 
+        "CoreLocation", 
         "Security", 
         "CoreMedia", 
         "EventKit", 
@@ -66,7 +79,8 @@
         "RevMobAds", 
         "Chartboost", 
         "AdMob", 
-        "FlurryAPI"
+        "FlurryAPI", 
+        "VunglePub"
     ], 
     "flags": [
         "-DNS_BLOCK_ASSERTIONS=1", 
@@ -183,6 +197,41 @@
                     "prefix": "./", 
                     "suffix": "GADRequestError.h"
                 }, 
+                "VGAdType.h": {
+                    "key": "VGAdType.h", 
+                    "prefix": "Vungle/headers/", 
+                    "suffix": "VGAdType.h"
+                }, 
+                "VGAssertMacros.h": {
+                    "key": "VGAssertMacros.h", 
+                    "prefix": "Vungle/headers/", 
+                    "suffix": "VGAssertMacros.h"
+                }, 
+                "VGConstants.h": {
+                    "key": "VGConstants.h", 
+                    "prefix": "Vungle/headers/", 
+                    "suffix": "VGConstants.h"
+                }, 
+                "VGPlayData.h": {
+                    "key": "VGPlayData.h", 
+                    "prefix": "Vungle/headers/", 
+                    "suffix": "VGPlayData.h"
+                }, 
+                "VGStatusData.h": {
+                    "key": "VGStatusData.h", 
+                    "prefix": "Vungle/headers/", 
+                    "suffix": "VGStatusData.h"
+                }, 
+                "VGUserData.h": {
+                    "key": "VGUserData.h", 
+                    "prefix": "Vungle/headers/", 
+                    "suffix": "VGUserData.h"
+                }, 
+                "VGVunglePub.h": {
+                    "key": "VGVunglePub.h", 
+                    "prefix": "Vungle/headers/", 
+                    "suffix": "VGVunglePub.h"
+                }, 
                 "ViewController.h": {
                     "key": "ViewController.h", 
                     "prefix": "adnetworktests/", 
@@ -197,7 +246,7 @@
             "type": "iquote"
         }, 
         {
-            "header_path": "/var/folders/9z/yb2g6_ds1_3cbc5q74cc9jjc0000gn/T/tmpsk71ZB/BUILT_PRODUCTS_DIR/include", 
+            "header_path": "/var/folders/9z/yb2g6_ds1_3cbc5q74cc9jjc0000gn/T/tmp7pOlUK/BUILT_PRODUCTS_DIR/include", 
             "type": "I"
         }, 
         {
@@ -205,11 +254,11 @@
             "type": "I"
         }, 
         {
-            "header_path": "/var/folders/9z/yb2g6_ds1_3cbc5q74cc9jjc0000gn/T/tmpsk71ZB/DERIVED_FILE_DIR/armv7", 
+            "header_path": "/var/folders/9z/yb2g6_ds1_3cbc5q74cc9jjc0000gn/T/tmp7pOlUK/DERIVED_FILE_DIR/armv7", 
             "type": "I"
         }, 
         {
-            "header_path": "/var/folders/9z/yb2g6_ds1_3cbc5q74cc9jjc0000gn/T/tmpsk71ZB/DERIVED_FILE_DIR", 
+            "header_path": "/var/folders/9z/yb2g6_ds1_3cbc5q74cc9jjc0000gn/T/tmp7pOlUK/DERIVED_FILE_DIR", 
             "type": "I"
         }
     ], 
@@ -225,6 +274,7 @@
     "libs": [
         "z.1.2.5", 
         "Flurry_4.3.2", 
+        "vunglepub", 
         "GoogleAdMobAds"
     ], 
     "link_flags": [], 

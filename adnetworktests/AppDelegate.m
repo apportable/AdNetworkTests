@@ -10,6 +10,7 @@
 #import "Chartboost.h"
 #import "Flurry.h"
 #import <RevMobAds/RevMobAds.h>
+#import "VGVunglePub.h"
 
 #import "ViewController.h"
 
@@ -58,6 +59,11 @@
 #endif
     [Flurry setShowErrorInLogEnabled:YES];
     [Flurry setDebugLogEnabled:YES];
+    
+    VGUserData *data = [[VGUserData alloc] init];
+    data.age = 27;
+    data.gender = VGGenderFemale;
+    [VGVunglePub startWithPubAppID:@"vungleTest" userData:data];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.

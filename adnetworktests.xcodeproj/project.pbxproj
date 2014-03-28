@@ -15,6 +15,11 @@
 		213DE7A317C57F04006459FC /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213DE7A217C57F04006459FC /* EventKit.framework */; };
 		218173FF18E4F4680017CFEA /* libFlurry_4.3.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 218173FE18E4F4680017CFEA /* libFlurry_4.3.2.a */; };
 		2181740118E4F4890017CFEA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2181740018E4F4890017CFEA /* Security.framework */; };
+		2181741018E4FFCF0017CFEA /* libvunglepub.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2181740B18E4FFCF0017CFEA /* libvunglepub.a */; };
+		2181741118E4FFCF0017CFEA /* vg_button_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 2181740D18E4FFCF0017CFEA /* vg_button_close.png */; };
+		2181741218E4FFCF0017CFEA /* vg_button_mute_plain.png in Resources */ = {isa = PBXBuildFile; fileRef = 2181740E18E4FFCF0017CFEA /* vg_button_mute_plain.png */; };
+		2181741318E4FFCF0017CFEA /* vg_button_mute_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2181740F18E4FFCF0017CFEA /* vg_button_mute_selected.png */; };
+		2181741518E500850017CFEA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2181741418E500850017CFEA /* CoreLocation.framework */; };
 		219F8B2B176FB9AA00666305 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219F8B2A176FB9AA00666305 /* UIKit.framework */; };
 		219F8B2D176FB9AA00666305 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219F8B2C176FB9AA00666305 /* Foundation.framework */; };
 		219F8B2F176FB9AA00666305 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219F8B2E176FB9AA00666305 /* CoreGraphics.framework */; };
@@ -52,6 +57,18 @@
 		218173FD18E4F4680017CFEA /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
 		218173FE18E4F4680017CFEA /* libFlurry_4.3.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_4.3.2.a; sourceTree = "<group>"; };
 		2181740018E4F4890017CFEA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2181740418E4FFCF0017CFEA /* VGAdType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGAdType.h; sourceTree = "<group>"; };
+		2181740518E4FFCF0017CFEA /* VGAssertMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGAssertMacros.h; sourceTree = "<group>"; };
+		2181740618E4FFCF0017CFEA /* VGConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGConstants.h; sourceTree = "<group>"; };
+		2181740718E4FFCF0017CFEA /* VGPlayData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGPlayData.h; sourceTree = "<group>"; };
+		2181740818E4FFCF0017CFEA /* VGStatusData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGStatusData.h; sourceTree = "<group>"; };
+		2181740918E4FFCF0017CFEA /* VGUserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGUserData.h; sourceTree = "<group>"; };
+		2181740A18E4FFCF0017CFEA /* VGVunglePub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGVunglePub.h; sourceTree = "<group>"; };
+		2181740B18E4FFCF0017CFEA /* libvunglepub.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libvunglepub.a; sourceTree = "<group>"; };
+		2181740D18E4FFCF0017CFEA /* vg_button_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_button_close.png; sourceTree = "<group>"; };
+		2181740E18E4FFCF0017CFEA /* vg_button_mute_plain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_button_mute_plain.png; sourceTree = "<group>"; };
+		2181740F18E4FFCF0017CFEA /* vg_button_mute_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_button_mute_selected.png; sourceTree = "<group>"; };
+		2181741418E500850017CFEA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		219F8B27176FB9AA00666305 /* adnetworktests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = adnetworktests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		219F8B2A176FB9AA00666305 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		219F8B2C176FB9AA00666305 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -100,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2181741518E500850017CFEA /* CoreLocation.framework in Frameworks */,
 				2181740118E4F4890017CFEA /* Security.framework in Frameworks */,
 				21BC286018569C4C00F5967E /* libz.1.2.5.dylib in Frameworks */,
 				21BC285C18569BA700F5967E /* Social.framework in Frameworks */,
@@ -117,6 +135,7 @@
 				21D08587179F5FA400B588DF /* AudioToolbox.framework in Frameworks */,
 				219F8B5F176FBAA700666305 /* QuartzCore.framework in Frameworks */,
 				219F8B5D176FBA8D00666305 /* StoreKit.framework in Frameworks */,
+				2181741018E4FFCF0017CFEA /* libvunglepub.a in Frameworks */,
 				219F8B59176FBA8100666305 /* SystemConfiguration.framework in Frameworks */,
 				219F8B2B176FB9AA00666305 /* UIKit.framework in Frameworks */,
 				219F8B2D176FB9AA00666305 /* Foundation.framework in Frameworks */,
@@ -137,6 +156,40 @@
 				218173FE18E4F4680017CFEA /* libFlurry_4.3.2.a */,
 			);
 			path = Flurry;
+			sourceTree = "<group>";
+		};
+		2181740218E4FFCF0017CFEA /* Vungle */ = {
+			isa = PBXGroup;
+			children = (
+				2181740318E4FFCF0017CFEA /* headers */,
+				2181740B18E4FFCF0017CFEA /* libvunglepub.a */,
+				2181740C18E4FFCF0017CFEA /* resources */,
+			);
+			path = Vungle;
+			sourceTree = "<group>";
+		};
+		2181740318E4FFCF0017CFEA /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				2181740418E4FFCF0017CFEA /* VGAdType.h */,
+				2181740518E4FFCF0017CFEA /* VGAssertMacros.h */,
+				2181740618E4FFCF0017CFEA /* VGConstants.h */,
+				2181740718E4FFCF0017CFEA /* VGPlayData.h */,
+				2181740818E4FFCF0017CFEA /* VGStatusData.h */,
+				2181740918E4FFCF0017CFEA /* VGUserData.h */,
+				2181740A18E4FFCF0017CFEA /* VGVunglePub.h */,
+			);
+			path = headers;
+			sourceTree = "<group>";
+		};
+		2181740C18E4FFCF0017CFEA /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				2181740D18E4FFCF0017CFEA /* vg_button_close.png */,
+				2181740E18E4FFCF0017CFEA /* vg_button_mute_plain.png */,
+				2181740F18E4FFCF0017CFEA /* vg_button_mute_selected.png */,
+			);
+			path = resources;
 			sourceTree = "<group>";
 		};
 		219F8B1E176FB9AA00666305 = {
@@ -171,6 +224,8 @@
 		219F8B29176FB9AA00666305 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2181741418E500850017CFEA /* CoreLocation.framework */,
+				2181740218E4FFCF0017CFEA /* Vungle */,
 				2181740018E4F4890017CFEA /* Security.framework */,
 				218173FC18E4F4680017CFEA /* Flurry */,
 				21BC285F18569C4C00F5967E /* libz.1.2.5.dylib */,
@@ -285,11 +340,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2181741218E4FFCF0017CFEA /* vg_button_mute_plain.png in Resources */,
 				219F8B35176FB9AA00666305 /* InfoPlist.strings in Resources */,
 				219F8B3D176FB9AA00666305 /* Default.png in Resources */,
+				2181741118E4FFCF0017CFEA /* vg_button_close.png in Resources */,
 				219F8B3F176FB9AA00666305 /* Default@2x.png in Resources */,
 				219F8B41176FB9AA00666305 /* Default-568h@2x.png in Resources */,
 				219F8B47176FB9AA00666305 /* ViewController.xib in Resources */,
+				2181741318E4FFCF0017CFEA /* vg_button_mute_selected.png in Resources */,
 				219F8B55176FBA4000666305 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +463,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Chartboost",
 					/Users/glenna/workspace/pickles/dcf/Applications/adnetworktests/Flurry,
+					/Users/glenna/workspace/pickles/dcf/Applications/adnetworktests/Vungle,
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -431,6 +490,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Chartboost",
 					/Users/glenna/workspace/pickles/dcf/Applications/adnetworktests/Flurry,
+					/Users/glenna/workspace/pickles/dcf/Applications/adnetworktests/Vungle,
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -35,7 +35,7 @@
     GADRequest *request = [GADRequest request];
     request.testDevices = [NSArray arrayWithObjects:GAD_SIMULATOR_ID, nil];
     [mBannerView loadRequest:request];
-
+    [VGVunglePub setDelegate:self];
     [self loadInterstitial];
 }
 
@@ -73,6 +73,14 @@
         [mInterstitial presentFromRootViewController:[UIApplication sharedApplication].keyWindow.rootViewController];
     }
     [Flurry logEvent:@"showAdMobInterstitial"];
+}
+
+- (IBAction)showVungleAd:(id)sender {
+    if ([VGVunglePub adIsAvailable]) {
+        [VGVunglePub playIncentivizedAd:self animated:YES showClose:YES userTag:nil];
+//        [VGVunglePub playModalAd:self animated:YES];
+        [Flurry logEvent:@"showVungle"];
+    }
 }
 
 - (IBAction)pressed:(id)sender {
@@ -148,6 +156,56 @@
 
 - (void)adViewWillLeaveApplication:(GADBannerView *)adView {
     NSLog(@"admobview adViewWillLeaveApplication");
+}
+
+#pragma mark vungle delegate methods
+static BOOL finished_last_vungle_video_ = NO;
+
+- (void)vungleMoviePlayed:(VGPlayData*)playData
+{
+    NSLog(@"vungleMoviePlayed: %@", playData);
+    if ([playData playedFull]) {
+        finished_last_vungle_video_ = YES;
+    }
+}
+
+- (void)vungleStatusUpdate:(VGStatusData*)statusData
+{
+    NSLog(@"vungleStatusUpdate: %@", statusData);
+}
+
+- (void)vungleViewDidDisappear:(UIViewController*)viewController
+{
+    NSLog(@"vungleViewDidDisappear");
+    if (finished_last_vungle_video_) {
+        NSLog(@"vungle award coins!!!!");
+        finished_last_vungle_video_ = NO;
+    }
+}
+
+- (void)vungleViewDidDisappear:(UIViewController*)viewController willShowProductView:(BOOL)willShow
+{
+    NSLog(@"vungleViewDidDisappear:willShowProductView:");
+    NSLog(@"vungleViewDidDisappear");
+    if (finished_last_vungle_video_) {
+        NSLog(@"vungle award coins!!!!");
+        finished_last_vungle_video_ = NO;
+    }
+}
+
+- (void)vungleViewWillAppear:(UIViewController*)viewController
+{
+    NSLog(@"vungleViewWillAppear");
+}
+
+- (void)vungleAppStoreWillAppear
+{
+    NSLog(@"vungleAppStoreWillAppear");
+}
+
+- (void)vungleAppStoreViewDidDisappear
+{
+    NSLog(@"vungleAppStoreViewDidDisappear");
 }
 
 

@@ -10,8 +10,8 @@
 #import "GADBannerView.h"
 #import "GADInterstitial.h"
 #import <AdColony/AdColony.h>
-
-@interface ViewController : UIViewController <GADInterstitialDelegate, GADBannerViewDelegate> {
+#import "VGVunglePub.h"
+@interface ViewController : UIViewController <GADInterstitialDelegate, GADBannerViewDelegate, VGVunglePubDelegate> {
     GADBannerView *mBannerView;
     GADInterstitial *mInterstitial;
 }

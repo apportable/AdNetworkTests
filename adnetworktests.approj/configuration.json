@@ -179,7 +179,8 @@
         "Chartboost",
         "AdMob",
         "AdColony",
-        "FlurryAPI"
+        "FlurryAPI",
+        "VunglePub"
     ],
     
     // A list of source files (e.g. .m, .mm, .c, .cc, and .cpp) files to build.
