@@ -13,6 +13,8 @@
 		213DE79F17C57E9E006459FC /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213DE79E17C57E9E006459FC /* MediaPlayer.framework */; };
 		213DE7A117C57EF9006459FC /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213DE7A017C57EF9006459FC /* CoreTelephony.framework */; };
 		213DE7A317C57F04006459FC /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213DE7A217C57F04006459FC /* EventKit.framework */; };
+		218173FF18E4F4680017CFEA /* libFlurry_4.3.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 218173FE18E4F4680017CFEA /* libFlurry_4.3.2.a */; };
+		2181740118E4F4890017CFEA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2181740018E4F4890017CFEA /* Security.framework */; };
 		219F8B2B176FB9AA00666305 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219F8B2A176FB9AA00666305 /* UIKit.framework */; };
 		219F8B2D176FB9AA00666305 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219F8B2C176FB9AA00666305 /* Foundation.framework */; };
 		219F8B2F176FB9AA00666305 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219F8B2E176FB9AA00666305 /* CoreGraphics.framework */; };
@@ -47,6 +49,9 @@
 		213DE79E17C57E9E006459FC /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		213DE7A017C57EF9006459FC /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		213DE7A217C57F04006459FC /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		218173FD18E4F4680017CFEA /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		218173FE18E4F4680017CFEA /* libFlurry_4.3.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_4.3.2.a; sourceTree = "<group>"; };
+		2181740018E4F4890017CFEA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		219F8B27176FB9AA00666305 /* adnetworktests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = adnetworktests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		219F8B2A176FB9AA00666305 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		219F8B2C176FB9AA00666305 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -95,9 +100,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2181740118E4F4890017CFEA /* Security.framework in Frameworks */,
 				21BC286018569C4C00F5967E /* libz.1.2.5.dylib in Frameworks */,
 				21BC285C18569BA700F5967E /* Social.framework in Frameworks */,
 				21BC285E18569BE000F5967E /* EventKitUI.framework in Frameworks */,
+				218173FF18E4F4680017CFEA /* libFlurry_4.3.2.a in Frameworks */,
 				213DE79D17C57E96006459FC /* CoreMedia.framework in Frameworks */,
 				219F8B5B176FBA8800666305 /* AdSupport.framework in Frameworks */,
 				213DE7A317C57F04006459FC /* EventKit.framework in Frameworks */,
@@ -123,6 +130,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		218173FC18E4F4680017CFEA /* Flurry */ = {
+			isa = PBXGroup;
+			children = (
+				218173FD18E4F4680017CFEA /* Flurry.h */,
+				218173FE18E4F4680017CFEA /* libFlurry_4.3.2.a */,
+			);
+			path = Flurry;
+			sourceTree = "<group>";
+		};
 		219F8B1E176FB9AA00666305 = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +171,8 @@
 		219F8B29176FB9AA00666305 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2181740018E4F4890017CFEA /* Security.framework */,
+				218173FC18E4F4680017CFEA /* Flurry */,
 				21BC285F18569C4C00F5967E /* libz.1.2.5.dylib */,
 				21BC285D18569BE000F5967E /* EventKitUI.framework */,
 				21BC285B18569BA700F5967E /* Social.framework */,
@@ -382,10 +400,11 @@
 				INFOPLIST_FILE = "adnetworktests/adnetworktests-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Chartboost\"",
+					"\\\"$(SRCROOT)/Chartboost\\\"",
 					"$(SRCROOT)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Chartboost",
+					/Users/glenna/workspace/pickles/dcf/Applications/adnetworktests/Flurry,
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -407,10 +426,11 @@
 				INFOPLIST_FILE = "adnetworktests/adnetworktests-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Chartboost\"",
+					"\\\"$(SRCROOT)/Chartboost\\\"",
 					"$(SRCROOT)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Chartboost",
+					/Users/glenna/workspace/pickles/dcf/Applications/adnetworktests/Flurry,
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

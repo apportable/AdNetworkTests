@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "Chartboost.h"
+#import "Flurry.h"
 #if USE_REVMOB
 #import <RevMobAds/RevMobAds.h>
 #endif
@@ -52,6 +53,13 @@
     adColonyAppId = @"appcd4c2ca4996f4838b6bdfd";
 #endif
     [AdColony configureWithAppID:adColonyAppId zoneIDs:zoneIds delegate:self logging:YES];
+#ifdef APPORTABLE
+    [Flurry startSession:@"29KWMFWFYNVNYCMR7JX3"];
+#else
+    [Flurry startSession:@"PNQM2PVNTDW5JXQ885DG"];
+#endif
+    [Flurry setShowErrorInLogEnabled:YES];
+    [Flurry setDebugLogEnabled:YES];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.

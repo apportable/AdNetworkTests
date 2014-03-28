@@ -48,6 +48,7 @@
     }, 
     "deps": [
         "UIKit", 
+        "Security", 
         "CoreMedia", 
         "EventKit", 
         "CoreTelephony", 
@@ -64,7 +65,8 @@
         "CoreGraphics", 
         "RevMobAds", 
         "Chartboost", 
-        "AdMob"
+        "AdMob", 
+        "FlurryAPI"
     ], 
     "flags": [
         "-DNS_BLOCK_ASSERTIONS=1", 
@@ -131,6 +133,11 @@
                     "prefix": "Chartboost/", 
                     "suffix": "Chartboost.h"
                 }, 
+                "Flurry.h": {
+                    "key": "Flurry.h", 
+                    "prefix": "Flurry/", 
+                    "suffix": "Flurry.h"
+                }, 
                 "GADAdMobExtras.h": {
                     "key": "GADAdMobExtras.h", 
                     "prefix": "./", 
@@ -190,7 +197,7 @@
             "type": "iquote"
         }, 
         {
-            "header_path": "/var/folders/k8/3d9wq0210k73lxmt0zw8zfcr0000gn/T/tmpEKzqHX/BUILT_PRODUCTS_DIR/include", 
+            "header_path": "/var/folders/9z/yb2g6_ds1_3cbc5q74cc9jjc0000gn/T/tmpsk71ZB/BUILT_PRODUCTS_DIR/include", 
             "type": "I"
         }, 
         {
@@ -198,11 +205,11 @@
             "type": "I"
         }, 
         {
-            "header_path": "/var/folders/k8/3d9wq0210k73lxmt0zw8zfcr0000gn/T/tmpEKzqHX/DERIVED_FILE_DIR/armv7", 
+            "header_path": "/var/folders/9z/yb2g6_ds1_3cbc5q74cc9jjc0000gn/T/tmpsk71ZB/DERIVED_FILE_DIR/armv7", 
             "type": "I"
         }, 
         {
-            "header_path": "/var/folders/k8/3d9wq0210k73lxmt0zw8zfcr0000gn/T/tmpEKzqHX/DERIVED_FILE_DIR", 
+            "header_path": "/var/folders/9z/yb2g6_ds1_3cbc5q74cc9jjc0000gn/T/tmpsk71ZB/DERIVED_FILE_DIR", 
             "type": "I"
         }
     ], 
@@ -217,6 +224,7 @@
     "java_sources": [], 
     "libs": [
         "z.1.2.5", 
+        "Flurry_4.3.2", 
         "GoogleAdMobAds"
     ], 
     "link_flags": [], 
@@ -250,6 +258,7 @@
     "storyboards": [], 
     "type": "app", 
     "version": "3", 
+    "xcdatamodels": [], 
     "xcode_project": "adnetworktests.xcodeproj", 
     "xibs": [
         {

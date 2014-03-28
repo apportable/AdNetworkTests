@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Chartboost.h"
 #import "AppDelegate.h"
+#import "Flurry.h"
 #if USE_REVMOB
 #import <RevMobAds/RevMobAds.h>
 #endif
@@ -48,6 +49,7 @@
 
 - (IBAction)showChartboost:(id)sender {
     [[Chartboost sharedChartboost] showInterstitial];
+    [Flurry logEvent:@"showChartboost"];
 }
 
 - (IBAction)showAdColony:(id)sender {
@@ -59,6 +61,7 @@
 #else
     [AdColony playVideoAdForZone:@"vz9fe8f499eaf04128aa506c" withDelegate:nil];
 #endif
+    [Flurry logEvent:@"showAdColony"];
 }
 
 - (IBAction)showRevmob:(id)sender {
@@ -67,6 +70,7 @@
 #else
     [sender setTitle:@"Revmob is disabled" forState:UIControlStateNormal];
 #endif
+    [Flurry logEvent:@"showRevMob"];
 }
 
 - (IBAction)showInterstitial:(id)sender {
@@ -74,6 +78,7 @@
     if (mInterstitial.isReady) {
         [mInterstitial presentFromRootViewController:[UIApplication sharedApplication].keyWindow.rootViewController];
     }
+    [Flurry logEvent:@"showAdMobInterstitial"];
 }
 
 - (IBAction)pressed:(id)sender {
