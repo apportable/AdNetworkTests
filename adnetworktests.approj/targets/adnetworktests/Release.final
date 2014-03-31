@@ -152,6 +152,16 @@
                     "prefix": "Flurry/", 
                     "suffix": "Flurry.h"
                 }, 
+                "FlurryAdDelegate.h": {
+                    "key": "FlurryAdDelegate.h", 
+                    "prefix": "FlurryAds/", 
+                    "suffix": "FlurryAdDelegate.h"
+                }, 
+                "FlurryAds.h": {
+                    "key": "FlurryAds.h", 
+                    "prefix": "FlurryAds/", 
+                    "suffix": "FlurryAds.h"
+                }, 
                 "GADAdMobExtras.h": {
                     "key": "GADAdMobExtras.h", 
                     "prefix": "./", 
@@ -246,7 +256,7 @@
             "type": "iquote"
         }, 
         {
-            "header_path": "/var/folders/9z/yb2g6_ds1_3cbc5q74cc9jjc0000gn/T/tmp7pOlUK/BUILT_PRODUCTS_DIR/include", 
+            "header_path": "/var/folders/9z/yb2g6_ds1_3cbc5q74cc9jjc0000gn/T/tmph0JWzr/BUILT_PRODUCTS_DIR/include", 
             "type": "I"
         }, 
         {
@@ -254,11 +264,11 @@
             "type": "I"
         }, 
         {
-            "header_path": "/var/folders/9z/yb2g6_ds1_3cbc5q74cc9jjc0000gn/T/tmp7pOlUK/DERIVED_FILE_DIR/armv7", 
+            "header_path": "/var/folders/9z/yb2g6_ds1_3cbc5q74cc9jjc0000gn/T/tmph0JWzr/DERIVED_FILE_DIR/armv7", 
             "type": "I"
         }, 
         {
-            "header_path": "/var/folders/9z/yb2g6_ds1_3cbc5q74cc9jjc0000gn/T/tmp7pOlUK/DERIVED_FILE_DIR", 
+            "header_path": "/var/folders/9z/yb2g6_ds1_3cbc5q74cc9jjc0000gn/T/tmph0JWzr/DERIVED_FILE_DIR", 
             "type": "I"
         }
     ], 
@@ -273,7 +283,8 @@
     "java_sources": [], 
     "libs": [
         "z.1.2.5", 
-        "Flurry_4.3.2", 
+        "Flurry_4.4.0", 
+        "FlurryAds_4.4.0", 
         "vunglepub", 
         "GoogleAdMobAds"
     ], 
@@ -308,7 +319,6 @@
     "storyboards": [], 
     "type": "app", 
     "version": "3", 
-    "xcdatamodels": [], 
     "xcode_project": "adnetworktests.xcodeproj", 
     "xibs": [
         {

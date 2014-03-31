@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "Chartboost.h"
 #import "Flurry.h"
+#import "FlurryAds.h"
 #import <RevMobAds/RevMobAds.h>
 #import "VGVunglePub.h"
 
@@ -60,6 +61,7 @@
     [Flurry setShowErrorInLogEnabled:YES];
     [Flurry setDebugLogEnabled:YES];
     
+    
     VGUserData *data = [[VGUserData alloc] init];
     data.age = 27;
     data.gender = VGGenderFemale;
@@ -70,6 +72,7 @@
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    [FlurryAds initialize:self.window.rootViewController];
     return YES;
 }
 

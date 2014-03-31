@@ -10,11 +10,18 @@
 #import "Chartboost.h"
 #import "AppDelegate.h"
 #import "Flurry.h"
+#import "FlurryAds.h"
 #import <RevMobAds/RevMobAds.h>
 
 @interface ViewController () <AdColonyAdDelegate>
 
 @end
+
+#ifdef APPORTABLE
+NSString *adSpaceName = @"android_ad";
+#else
+NSString *adSpaceName = @"ios_ad";
+#endif
 
 @implementation ViewController
 
@@ -37,6 +44,20 @@
     [mBannerView loadRequest:request];
     [VGVunglePub setDelegate:self];
     [self loadInterstitial];
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [FlurryAds setAdDelegate:self];
+    [FlurryAds fetchAdForSpace:adSpaceName frame:self.view.frame size:FULLSCREEN];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [FlurryAds setAdDelegate:nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -80,6 +101,15 @@
         [VGVunglePub playIncentivizedAd:self animated:YES showClose:YES userTag:nil];
 //        [VGVunglePub playModalAd:self animated:YES];
         [Flurry logEvent:@"showVungle"];
+    }
+}
+
+- (IBAction)showFlurryAd:(id)sender {
+    if ([FlurryAds adReadyForSpace:adSpaceName]) {
+        [FlurryAds displayAdForSpace:adSpaceName onView:self.view];
+    } else {
+        // Fetch an ad
+        [FlurryAds fetchAdForSpace:adSpaceName frame:self.view.frame size:FULLSCREEN];
     }
 }
 
@@ -206,6 +236,22 @@ static BOOL finished_last_vungle_video_ = NO;
 - (void)vungleAppStoreViewDidDisappear
 {
     NSLog(@"vungleAppStoreViewDidDisappear");
+}
+
+#pragma mark flurry ad delegate
+
+- (BOOL) spaceShouldDisplay:(NSString*)adSpace interstitial:(BOOL)interstitial {
+    if (interstitial) {
+        // Pause app state here
+    }
+    // Continue ad display
+    return YES;
+}
+
+- (void)spaceDidDismiss:(NSString *)adSpace interstitial:(BOOL)interstitial {
+    if (interstitial) {
+        // Resume app state here
+    }
 }
 
 

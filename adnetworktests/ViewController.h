@@ -11,7 +11,9 @@
 #import "GADInterstitial.h"
 #import <AdColony/AdColony.h>
 #import "VGVunglePub.h"
-@interface ViewController : UIViewController <GADInterstitialDelegate, GADBannerViewDelegate, VGVunglePubDelegate> {
+#import "FlurryAdDelegate.h"
+
+@interface ViewController : UIViewController <GADInterstitialDelegate, GADBannerViewDelegate, VGVunglePubDelegate, FlurryAdDelegate> {
     GADBannerView *mBannerView;
     GADInterstitial *mInterstitial;
 }
