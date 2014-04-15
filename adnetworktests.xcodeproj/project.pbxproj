@@ -467,7 +467,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					/Users/glenna/workspace/pickles/dcf/Applications/adnetworktests,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "adnetworktests/adnetworktests-Prefix.pch";
@@ -478,9 +477,9 @@
 					"$(SRCROOT)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Chartboost",
-					/Users/glenna/workspace/pickles/dcf/Applications/adnetworktests/Flurry,
-					/Users/glenna/workspace/pickles/dcf/Applications/adnetworktests/Vungle,
-					/Users/glenna/workspace/pickles/dcf/Applications/adnetworktests/FlurryAds,
+					"$(SRCROOT)/Flurry",
+					"$(SRCROOT)/Vungle",
+					"$(SRCROOT)/FlurryAds",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -495,7 +494,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					/Users/glenna/workspace/pickles/dcf/Applications/adnetworktests,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "adnetworktests/adnetworktests-Prefix.pch";
@@ -506,9 +504,9 @@
 					"$(SRCROOT)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Chartboost",
-					/Users/glenna/workspace/pickles/dcf/Applications/adnetworktests/Flurry,
-					/Users/glenna/workspace/pickles/dcf/Applications/adnetworktests/Vungle,
-					/Users/glenna/workspace/pickles/dcf/Applications/adnetworktests/FlurryAds,
+					"$(SRCROOT)/Flurry",
+					"$(SRCROOT)/Vungle",
+					"$(SRCROOT)/FlurryAds",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
