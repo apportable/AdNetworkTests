@@ -35,8 +35,6 @@ NSString *adSpaceName = @"ios_ad";
     mBannerView.adUnitID = @"a151ef29a50747e";
 #endif
     mBannerView.rootViewController = self;
-    CGRect frame = mBannerView.frame;
-    mBannerView.frame = frame;
     mBannerView.delegate = self;
     [self.view addSubview:mBannerView];
     GADRequest *request = [GADRequest request];
