@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		212DA0F81976B998002C2EAA /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 212DA0F41976B998002C2EAA /* CHANGELOG.md */; };
+		212DA0F91976B998002C2EAA /* libChartboost.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 212DA0F61976B998002C2EAA /* libChartboost.a */; };
+		212DA0FA1976B998002C2EAA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 212DA0F71976B998002C2EAA /* README.md */; };
+		212DA0FC1976BF5A002C2EAA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 212DA0FB1976BF5A002C2EAA /* CoreData.framework */; };
 		213DE79917C57E7A006459FC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213DE79817C57E7A006459FC /* AVFoundation.framework */; };
 		213DE79B17C57E86006459FC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213DE79A17C57E86006459FC /* CFNetwork.framework */; };
 		213DE79D17C57E96006459FC /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213DE79C17C57E95006459FC /* CoreMedia.framework */; };
@@ -32,8 +36,6 @@
 		219F8B41176FB9AA00666305 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 219F8B40176FB9AA00666305 /* Default-568h@2x.png */; };
 		219F8B44176FB9AA00666305 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 219F8B43176FB9AA00666305 /* ViewController.m */; };
 		219F8B47176FB9AA00666305 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 219F8B45176FB9AA00666305 /* ViewController.xib */; };
-		219F8B54176FBA4000666305 /* libChartboost.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 219F8B52176FBA4000666305 /* libChartboost.a */; };
-		219F8B55176FBA4000666305 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 219F8B53176FBA4000666305 /* README.md */; };
 		219F8B57176FBA6A00666305 /* RevMobAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219F8B56176FBA6A00666305 /* RevMobAds.framework */; };
 		219F8B59176FBA8100666305 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219F8B58176FBA8100666305 /* SystemConfiguration.framework */; };
 		219F8B5B176FBA8800666305 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219F8B5A176FBA8800666305 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -49,6 +51,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		212DA0EF1976B998002C2EAA /* CBMoreAppsButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMoreAppsButton.h; sourceTree = "<group>"; };
+		212DA0F01976B998002C2EAA /* CBNewsfeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBNewsfeed.h; sourceTree = "<group>"; };
+		212DA0F11976B998002C2EAA /* CBNewsfeedUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBNewsfeedUI.h; sourceTree = "<group>"; };
+		212DA0F21976B998002C2EAA /* CBPostInstallAnalyticsTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBPostInstallAnalyticsTracker.h; sourceTree = "<group>"; };
+		212DA0F31976B998002C2EAA /* CBStory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBStory.h; sourceTree = "<group>"; };
+		212DA0F41976B998002C2EAA /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
+		212DA0F51976B998002C2EAA /* Chartboost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chartboost.h; sourceTree = "<group>"; };
+		212DA0F61976B998002C2EAA /* libChartboost.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libChartboost.a; sourceTree = "<group>"; };
+		212DA0F71976B998002C2EAA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		212DA0FB1976BF5A002C2EAA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		213DE79817C57E7A006459FC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		213DE79A17C57E86006459FC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		213DE79C17C57E95006459FC /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -89,9 +101,6 @@
 		219F8B42176FB9AA00666305 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		219F8B43176FB9AA00666305 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		219F8B46176FB9AA00666305 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		219F8B51176FBA4000666305 /* Chartboost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chartboost.h; sourceTree = "<group>"; };
-		219F8B52176FBA4000666305 /* libChartboost.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libChartboost.a; sourceTree = "<group>"; };
-		219F8B53176FBA4000666305 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		219F8B56176FBA6A00666305 /* RevMobAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RevMobAds.framework; sourceTree = "<group>"; };
 		219F8B58176FBA8100666305 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		219F8B5A176FBA8800666305 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
@@ -121,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				212DA0FC1976BF5A002C2EAA /* CoreData.framework in Frameworks */,
 				2181741518E500850017CFEA /* CoreLocation.framework in Frameworks */,
 				2181740118E4F4890017CFEA /* Security.framework in Frameworks */,
 				21BC286018569C4C00F5967E /* libz.1.2.5.dylib in Frameworks */,
@@ -137,6 +147,7 @@
 				213DE79917C57E7A006459FC /* AVFoundation.framework in Frameworks */,
 				21D08589179F5FAC00B588DF /* MessageUI.framework in Frameworks */,
 				21D08587179F5FA400B588DF /* AudioToolbox.framework in Frameworks */,
+				212DA0F91976B998002C2EAA /* libChartboost.a in Frameworks */,
 				219F8B5F176FBAA700666305 /* QuartzCore.framework in Frameworks */,
 				219F8B5D176FBA8D00666305 /* StoreKit.framework in Frameworks */,
 				219027DD18E9E578009A624F /* libFlurryAds_4.4.0.a in Frameworks */,
@@ -145,7 +156,6 @@
 				219F8B2B176FB9AA00666305 /* UIKit.framework in Frameworks */,
 				219F8B2D176FB9AA00666305 /* Foundation.framework in Frameworks */,
 				219F8B2F176FB9AA00666305 /* CoreGraphics.framework in Frameworks */,
-				219F8B54176FBA4000666305 /* libChartboost.a in Frameworks */,
 				21D08585179F5F5700B588DF /* libGoogleAdMobAds.a in Frameworks */,
 				219F8B57176FBA6A00666305 /* RevMobAds.framework in Frameworks */,
 			);
@@ -154,6 +164,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		212DA0EE1976B998002C2EAA /* Chartboost */ = {
+			isa = PBXGroup;
+			children = (
+				212DA0EF1976B998002C2EAA /* CBMoreAppsButton.h */,
+				212DA0F01976B998002C2EAA /* CBNewsfeed.h */,
+				212DA0F11976B998002C2EAA /* CBNewsfeedUI.h */,
+				212DA0F21976B998002C2EAA /* CBPostInstallAnalyticsTracker.h */,
+				212DA0F31976B998002C2EAA /* CBStory.h */,
+				212DA0F41976B998002C2EAA /* CHANGELOG.md */,
+				212DA0F51976B998002C2EAA /* Chartboost.h */,
+				212DA0F61976B998002C2EAA /* libChartboost.a */,
+				212DA0F71976B998002C2EAA /* README.md */,
+			);
+			path = Chartboost;
+			sourceTree = "<group>";
+		};
 		2181740218E4FFCF0017CFEA /* Vungle */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +265,7 @@
 		219F8B29176FB9AA00666305 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				212DA0FB1976BF5A002C2EAA /* CoreData.framework */,
 				219027DE18E9E620009A624F /* Flurry */,
 				219027D918E9E578009A624F /* FlurryAds */,
 				2181741418E500850017CFEA /* CoreLocation.framework */,
@@ -259,8 +286,8 @@
 				21D08582179F5F5200B588DF /* GADRequestError.h */,
 				21D08583179F5F5200B588DF /* README.txt */,
 				21D08584179F5F5200B588DF /* libGoogleAdMobAds.a */,
+				212DA0EE1976B998002C2EAA /* Chartboost */,
 				219F8B56176FBA6A00666305 /* RevMobAds.framework */,
-				219F8B50176FBA4000666305 /* Chartboost */,
 				219F8B2A176FB9AA00666305 /* UIKit.framework */,
 				219F8B2C176FB9AA00666305 /* Foundation.framework */,
 				219F8B2E176FB9AA00666305 /* CoreGraphics.framework */,
@@ -293,16 +320,6 @@
 				219F8B40176FB9AA00666305 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		219F8B50176FBA4000666305 /* Chartboost */ = {
-			isa = PBXGroup;
-			children = (
-				219F8B51176FBA4000666305 /* Chartboost.h */,
-				219F8B52176FBA4000666305 /* libChartboost.a */,
-				219F8B53176FBA4000666305 /* README.md */,
-			);
-			path = Chartboost;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,13 +375,14 @@
 			files = (
 				2181741218E4FFCF0017CFEA /* vg_button_mute_plain.png in Resources */,
 				219F8B35176FB9AA00666305 /* InfoPlist.strings in Resources */,
+				212DA0FA1976B998002C2EAA /* README.md in Resources */,
 				219F8B3D176FB9AA00666305 /* Default.png in Resources */,
 				2181741118E4FFCF0017CFEA /* vg_button_close.png in Resources */,
 				219F8B3F176FB9AA00666305 /* Default@2x.png in Resources */,
 				219F8B41176FB9AA00666305 /* Default-568h@2x.png in Resources */,
 				219F8B47176FB9AA00666305 /* ViewController.xib in Resources */,
+				212DA0F81976B998002C2EAA /* CHANGELOG.md in Resources */,
 				2181741318E4FFCF0017CFEA /* vg_button_mute_selected.png in Resources */,
-				219F8B55176FBA4000666305 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

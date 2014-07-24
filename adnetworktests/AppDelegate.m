@@ -23,15 +23,11 @@
     [UIScreen mainScreen].currentMode = [UIScreenMode emulatedMode:UIScreenBestEmulatedMode];
 #endif
     //Chartboost config
-    Chartboost *cb = [Chartboost sharedChartboost];
 #ifdef APPORTABLE
-    cb.appId = @"5125833216ba47017000000c";
-    cb.appSignature = @"cb4f77e909672121e3011eae23f0be0887659aeb";
+    [Chartboost startWithAppId:@"5125833216ba47017000000c" appSignature:@"cb4f77e909672121e3011eae23f0be0887659aeb" delegate:nil];
 #else
-    cb.appId = @"5125786a17ba476d5000002d";
-    cb.appSignature = @"6c43009ec3ebccbd2ce7053e3313a78b4a3f4c07";
+    [Chartboost startWithAppId:@"5125786a17ba476d5000002d" appSignature:@"6c43009ec3ebccbd2ce7053e3313a78b4a3f4c07" delegate:nil];
 #endif
-    [cb startSession];
 
     //Revmob config
 #ifdef APPORTABLE
