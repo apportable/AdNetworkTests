@@ -244,7 +244,9 @@
     
     // A list of header search paths.
     // e.g. "./External/facebook-sdk/include"
-    "header_paths": [],
+    "header_paths": [
+        "MoPubSDK/"
+    ],
     
     // A list of global compile flags for the project.
     // Flags can be either a string, e.g. "-Werror-shadow",
@@ -272,7 +274,9 @@
     
     // A list of glob removal filters to filter out source files.
     // e.g. "./Server/Level_[0-9].m"
-    "sources_glob":[],
+    "sources_glob":[
+        "MoPubSDK/**"
+    ],
     
     // A list of assets to package with the application.
     // Assets can be either a string, e.g., "./Info.plist",
