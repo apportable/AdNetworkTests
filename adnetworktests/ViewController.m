@@ -12,8 +12,11 @@
 #import "Flurry.h"
 #import "FlurryAds.h"
 #import <RevMobAds/RevMobAds.h>
+#import "MPInterstitialAdController.h"
 
-@interface ViewController () <AdColonyAdDelegate>
+@interface ViewController () <AdColonyAdDelegate, MPInterstitialAdControllerDelegate>
+
+@property (nonatomic) MPInterstitialAdController *interstitial;
 
 @end
 
@@ -42,6 +45,10 @@ NSString *adSpaceName = @"ios_ad";
     [mBannerView loadRequest:request];
     [VGVunglePub setDelegate:self];
     [self loadInterstitial];
+    
+    self.interstitial = [MPInterstitialAdController interstitialAdControllerForAdUnitId:@"0e60ee652c6c4badb36f912e82e51b81"];
+    self.interstitial.delegate = self;
+    [self.interstitial loadAd];
     
 }
 
@@ -110,6 +117,13 @@ NSString *adSpaceName = @"ios_ad";
         [FlurryAds fetchAdForSpace:adSpaceName frame:self.view.frame size:FULLSCREEN];
     }
 }
+
+- (IBAction)showMoPubInterstitial:(id)sender {
+    if (self.interstitial.ready) {
+        [self.interstitial showFromViewController:self];
+    }
+}
+
 
 - (IBAction)pressed:(id)sender {
 //    mBannerView.hidden = !mBannerView.hidden;
@@ -252,6 +266,42 @@ static BOOL finished_last_vungle_video_ = NO;
     }
 }
 
+#pragma mark MoPub delegate
+
+- (void)interstitialDidLoadAd:(MPInterstitialAdController *)interstitial
+{
+    NSLog(@"albert mopub interstitialDidLoadAd: %@", interstitial);
+}
+
+- (void)interstitialDidFailToLoadAd:(MPInterstitialAdController *)interstitial
+{
+    NSLog(@"albert mopub interstitialDidFailToLoadAd: %@", interstitial);
+}
+
+- (void)interstitialWillAppear:(MPInterstitialAdController *)interstitial
+{
+    NSLog(@"albert mopub interstitialWillAppear: %@", interstitial);
+}
+
+- (void)interstitialDidAppear:(MPInterstitialAdController *)interstitial
+{
+    NSLog(@"albert mopub interstitialDidAppear: %@", interstitial);
+}
+
+- (void)interstitialWillDisappear:(MPInterstitialAdController *)interstitial
+{
+    NSLog(@"albert mopub interstitialWillDisappear: %@", interstitial);
+}
+
+- (void)interstitialDidDisappear:(MPInterstitialAdController *)interstitial
+{
+    NSLog(@"albert mopub interstitialDidDisappear: %@", interstitial);
+}
+
+- (void)interstitialDidExpire:(MPInterstitialAdController *)interstitial
+{
+    NSLog(@"albert mopub interstitialDidExpire: %@", interstitial);
+}
 
 #if APPORTABLE
 - (void)buttonUpWithEvent:(UIEvent *)event
