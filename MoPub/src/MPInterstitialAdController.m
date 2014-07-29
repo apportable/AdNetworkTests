@@ -6,23 +6,14 @@
 //  Copyright (c) 2014 Apportable. All rights reserved.
 //
 
-
-
 #import "MPInterstitialAdController.h"
 #import "MoPubInterstitial.h"
 #import <BridgeKit/AndroidActivity.h>
 
-@implementation MPInterstitialAdController : UIViewController {
+@implementation MPInterstitialAdController {
     MoPubInterstitial *_interstitial;
     ApportableMoPubInterstitialAdListener *_listener;
 }
-
-// @property (nonatomic, assign) id<MPInterstitialAdControllerDelegate> delegate;
-// @property (nonatomic, copy) NSString *adUnitId;
-// @property (nonatomic, copy) NSString *keywords;
-// @property (nonatomic, copy) CLLocation *location;
-// @property (nonatomic, assign, getter=isTesting) BOOL testing;
-// @property (nonatomic, assign, readonly) BOOL ready;
 
 + (MPInterstitialAdController *)interstitialAdControllerForAdUnitId:(NSString *)adUnitId
 {
@@ -40,6 +31,7 @@
             _listener = [[ApportableMoPubInterstitialAdListener alloc] init];
             [_interstitial setInterstitialAdListener:_listener];
         });
+        self.adUnitId = adUnitId;
     }
     return self;
 }
@@ -51,6 +43,10 @@
 
     [_listener dealloc];
     _listener = nil;
+
+    _delegate = nil;
+
+    [super dealloc];
 }
 
 - (void)loadAd
@@ -67,6 +63,14 @@
     });
 }
 
+- (void)setDelegate:(id <MPInterstitialAdControllerDelegate>)delegate
+{
+    dispatch_async(dispatch_get_main_android_queue(), ^{
+        [_listener setDelegate:delegate];
+        [_listener setController:self];
+    });
+}
+
 + (void)removeSharedInterstitialAdController:(MPInterstitialAdController *)controller
 {
 
@@ -79,7 +83,21 @@
 
 - (BOOL)ready
 {
-    return [_interstitial isReady];
+    __block BOOL ready = false;
+    dispatch_sync(dispatch_get_main_android_queue(), ^{
+        ready = [_interstitial isReady];
+    });
+    return ready;
+}
+
+- (void)setKeywords:(NSString *)keywords
+{
+    [_interstitial setKeywords:keywords];
+}
+
+- (void)setTesting:(BOOL)enabled
+{
+    [_interstitial setTesting:enabled];
 }
 
 @end
