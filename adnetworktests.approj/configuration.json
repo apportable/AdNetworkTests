@@ -121,7 +121,8 @@
     //"MANIFEST_EXTRAS":"",
     //"ACTIVITY_MANIFEST_EXTRAS": ,
     "APPLICATION_MANIFEST_EXTRAS": [
-        "adnetworktests.approj/assets/AdMob/application_manifest_extras.xml"
+        "adnetworktests.approj/assets/AdMob/application_manifest_extras.xml",
+        "adnetworktests.approj/assets/MoPub/application_manifest_extras.xml"
     ],
     //"TEMPLATE_VALUES":{},
     //"OGGENC_OPTIONS":"",
@@ -180,7 +181,8 @@
         "AdMob",
         "AdColony",
         "FlurryAPI",
-        "VunglePub"
+        "VunglePub",
+        "MoPub"
     ],
     
     // A list of source files (e.g. .m, .mm, .c, .cc, and .cpp) files to build.
