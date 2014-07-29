@@ -145,7 +145,6 @@ sources = [
     'src/com/mopub/nativeads/SpinningProgressView.java',
     'src/com/mopub/nativeads/UrlResolutionTask.java',
     'src/com/mopub/nativeads/ViewBinder.java',
-    'src/com/apportable/ApportableMoPubInterstitial.java'
 ]
 
 aidl_sources = [
