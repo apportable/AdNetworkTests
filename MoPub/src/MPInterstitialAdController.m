@@ -10,9 +10,11 @@
 
 #import "MPInterstitialAdController.h"
 #import "MoPubInterstitial.h"
+#import <BridgeKit/AndroidActivity.h>
 
 @implementation MPInterstitialAdController : UIViewController {
     MoPubInterstitial *_interstitial;
+    ApportableMoPubInterstitialAdListener *_listener;
 }
 
 // @property (nonatomic, assign) id<MPInterstitialAdControllerDelegate> delegate;
@@ -24,7 +26,7 @@
 
 + (MPInterstitialAdController *)interstitialAdControllerForAdUnitId:(NSString *)adUnitId
 {
-    MPInterstitialAdController *interstitialController = [[MPInterstitialAdController alloc] initWithAdUnitId:adUnitId];
+    MPInterstitialAdController *interstitialController = [[[MPInterstitialAdController alloc] initWithAdUnitId:adUnitId] autorelease];
     return interstitialController;
 }
 
@@ -33,19 +35,36 @@
     self = [super init];
     if (self)
     {
-        _interstitial = [[MoPubInterstitial alloc] initMoPubInterstitialForAdUnitId:adUnitId];
+        dispatch_sync(dispatch_get_main_android_queue(), ^{
+            _interstitial = [[MoPubInterstitial alloc] initMoPubInterstitialWithActivity:[AndroidActivity currentActivity] adUnitId:adUnitId];
+            _listener = [[ApportableMoPubInterstitialAdListener alloc] init];
+            [_interstitial setInterstitialAdListener:_listener];
+        });
     }
     return self;
 }
 
+- (void)dealloc
+{
+    [_interstitial dealloc];
+    _interstitial = nil;
+
+    [_listener dealloc];
+    _listener = nil;
+}
+
 - (void)loadAd
 {
-    [_interstitial load];
+    dispatch_async(dispatch_get_main_android_queue(), ^{
+        [_interstitial load];
+    });
 }
 
 - (void)showFromViewController:(UIViewController *)controller
 {
-    [_interstitial show];
+    dispatch_async(dispatch_get_main_android_queue(), ^{
+        [_interstitial show];
+    });
 }
 
 + (void)removeSharedInterstitialAdController:(MPInterstitialAdController *)controller

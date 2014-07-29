@@ -1,8 +1,10 @@
 #import <BridgeKit/JavaObject.h>
 
+@interface MoPubErrorCode : JavaObject
+@end
+
 @interface MoPubInterstitial : JavaObject
-- (MoPubInterstitial *)initMoPubInterstitialForAdUnitId:(NSString *)adUnitId;
-- (void)load;
-- (void)show;
-- (BOOL)isReady;
+@end
+
+@interface ApportableMoPubInterstitialAdListener : JavaObject
 @end
