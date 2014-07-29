@@ -14,7 +14,11 @@
 }
 @end
 
-@implementation ApportableMoPubInterstitialAdListener
+@implementation ApportableMoPubInterstitialAdListener {
+    id _delegate;
+}
+@synthesize controller = _controller;
+
 + (void)initializeJava
 {
     [super initializeJava];
@@ -58,16 +62,39 @@
     return [NSArray arrayWithObjects:[ApportableMoPubInterstitialAdListener interfaceName], nil];
 }
 
+- (void)setDelegate:(id)delegate
+{
+    _delegate = delegate;
+}
+
+- (void)setController:(id)controller
+{
+    _controller = controller;
+}
+
 - (void)onInterstitialLoaded:(MoPubInterstitial *)interstitial
 {
+    if (_delegate && _controller)
+    {
+        [_delegate interstitialDidLoadAd:_controller];
+    }
 }
 
 - (void)onInterstitialFailed:(MoPubInterstitial *)interstitial withErrorCode:(MoPubErrorCode *)errorCode
 {
+    DEBUG_LOG("%s", [[errorCode description] UTF8String]);
+    if (_delegate && _controller)
+    {
+        [_delegate interstitialDidFailToLoadAd:_controller];
+    }
 }
 
 - (void)onInterstitialShown:(MoPubInterstitial *)interstitial
 {
+    if (_delegate && _controller)
+    {
+        [_delegate interstitialDidAppear:_controller];
+    }
 }
 
 - (void)onInterstitialClicked:(MoPubInterstitial *)interstitial
@@ -76,6 +103,10 @@
 
 - (void)onInterstitialDismissed:(MoPubInterstitial *)interstitial
 {
+    if (_delegate && _controller)
+    {
+        [_delegate interstitialDidDisappear:_controller];
+    }
 }
 
 @end
