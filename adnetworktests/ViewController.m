@@ -121,6 +121,8 @@ NSString *adSpaceName = @"ios_ad";
 - (IBAction)showMoPubInterstitial:(id)sender {
     if (self.interstitial.ready) {
         [self.interstitial showFromViewController:self];
+    } else {
+        [self.interstitial loadAd];
     }
 }
 
