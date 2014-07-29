@@ -1,0 +1,28 @@
+header_paths = [
+    'bridge/include'
+]
+
+defines = {
+
+}
+
+flags = [
+
+]
+
+deps = [
+    'Foundation',
+    'MoPub/android',
+    'CoreLocation',
+]
+
+sources = [
+    'src/MPInterstitialAdController.m',
+    'bridge/src/MoPubInterstitial.m',
+]
+
+features = [
+]
+
+Import('env')
+env.BuildExternalModule('MoPub', sources, header_paths=header_paths, static=True, flags = flags, defines = defines, deps = deps, features=features)
