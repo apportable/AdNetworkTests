@@ -56,7 +56,7 @@
 
 + (NSString *)className
 {
-    return @"com.mopub.mobileads.MoPubInterstitial.InterstitialAdListener";
+    return @"com.apportable.mopub.InterstitialAdListener";
 }
 
 + (NSArray *)interfaces
