@@ -6,6 +6,8 @@
 + (void)initializeJava
 {
     [super initializeJava];
+
+    [MoPubErrorCode registerInstanceMethod:@"toString" selector:@selector(description) returnValue:[NSString className]];
 }
 
 + (NSString *)className
@@ -127,6 +129,13 @@
 
     [MoPubInterstitial registerInstanceMethod:@"isReady" selector:@selector(isReady) returnValue:[JavaClass boolPrimitive]];
 
+    [MoPubInterstitial registerInstanceMethod:@"setKeywords" selector:@selector(setKeywords:) arguments:[NSString className], nil];
+
+    [MoPubInterstitial registerInstanceMethod:@"getKeywords" selector:@selector(getKeywords) returnValue:[NSString className]];
+
+    [MoPubInterstitial registerInstanceMethod:@"setTesting" selector:@selector(setTesting:) arguments:[JavaClass boolPrimitive], nil];
+
+    [MoPubInterstitial registerInstanceMethod:@"getTesting" selector:@selector(getTesting) returnValue:[JavaClass boolPrimitive]];
 }
 
 + (NSString *)className
