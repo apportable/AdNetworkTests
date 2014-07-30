@@ -247,7 +247,6 @@
     // A list of header search paths.
     // e.g. "./External/facebook-sdk/include"
     "header_paths": [
-        "MoPubSDK/"
     ],
     
     // A list of global compile flags for the project.
