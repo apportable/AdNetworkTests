@@ -1,3 +1,6 @@
 .sconsign.dblite
 xcuserdata
 .DS_Store
+
+*.generated
+*.final
