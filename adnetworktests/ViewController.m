@@ -272,37 +272,37 @@ static BOOL finished_last_vungle_video_ = NO;
 
 - (void)interstitialDidLoadAd:(MPInterstitialAdController *)interstitial
 {
-    NSLog(@"albert mopub interstitialDidLoadAd: %@", interstitial);
+    NSLog(@"mopub interstitialDidLoadAd: %@", interstitial);
 }
 
 - (void)interstitialDidFailToLoadAd:(MPInterstitialAdController *)interstitial
 {
-    NSLog(@"albert mopub interstitialDidFailToLoadAd: %@", interstitial);
+    NSLog(@"mopub interstitialDidFailToLoadAd: %@", interstitial);
 }
 
 - (void)interstitialWillAppear:(MPInterstitialAdController *)interstitial
 {
-    NSLog(@"albert mopub interstitialWillAppear: %@", interstitial);
+    NSLog(@"mopub interstitialWillAppear: %@", interstitial);
 }
 
 - (void)interstitialDidAppear:(MPInterstitialAdController *)interstitial
 {
-    NSLog(@"albert mopub interstitialDidAppear: %@", interstitial);
+    NSLog(@"mopub interstitialDidAppear: %@", interstitial);
 }
 
 - (void)interstitialWillDisappear:(MPInterstitialAdController *)interstitial
 {
-    NSLog(@"albert mopub interstitialWillDisappear: %@", interstitial);
+    NSLog(@"mopub interstitialWillDisappear: %@", interstitial);
 }
 
 - (void)interstitialDidDisappear:(MPInterstitialAdController *)interstitial
 {
-    NSLog(@"albert mopub interstitialDidDisappear: %@", interstitial);
+    NSLog(@"mopub interstitialDidDisappear: %@", interstitial);
 }
 
 - (void)interstitialDidExpire:(MPInterstitialAdController *)interstitial
 {
-    NSLog(@"albert mopub interstitialDidExpire: %@", interstitial);
+    NSLog(@"mopub interstitialDidExpire: %@", interstitial);
 }
 
 #if APPORTABLE
