@@ -26,7 +26,7 @@
     self = [super init];
     if (self)
     {
-        dispatch_sync(dispatch_get_main_android_queue(), ^{
+        dispatch_async(dispatch_get_main_android_queue(), ^{
             _interstitial = [[MoPubInterstitial alloc] initMoPubInterstitialWithActivity:[AndroidActivity currentActivity] adUnitId:adUnitId];
             _listener = [[ApportableMoPubInterstitialAdListener alloc] init];
             [_interstitial setInterstitialAdListener:_listener];
