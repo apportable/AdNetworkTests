@@ -58,17 +58,13 @@
 
 - (void)showFromViewController:(UIViewController *)controller
 {
-    dispatch_async(dispatch_get_main_android_queue(), ^{
         [_interstitial show];
-    });
 }
 
 - (void)setDelegate:(id <MPInterstitialAdControllerDelegate>)delegate
 {
-    dispatch_async(dispatch_get_main_android_queue(), ^{
         [_listener setDelegate:delegate];
         [_listener setController:self];
-    });
 }
 
 + (void)removeSharedInterstitialAdController:(MPInterstitialAdController *)controller
