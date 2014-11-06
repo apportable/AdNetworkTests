@@ -23,8 +23,6 @@
 		2181741218E4FFCF0017CFEA /* vg_button_mute_plain.png in Resources */ = {isa = PBXBuildFile; fileRef = 2181740E18E4FFCF0017CFEA /* vg_button_mute_plain.png */; };
 		2181741318E4FFCF0017CFEA /* vg_button_mute_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2181740F18E4FFCF0017CFEA /* vg_button_mute_selected.png */; };
 		2181741518E500850017CFEA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2181741418E500850017CFEA /* CoreLocation.framework */; };
-		219027DD18E9E578009A624F /* libFlurryAds_4.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 219027DC18E9E578009A624F /* libFlurryAds_4.4.0.a */; };
-		219027E118E9E620009A624F /* libFlurry_4.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 219027E018E9E620009A624F /* libFlurry_4.4.0.a */; };
 		219F8B2B176FB9AA00666305 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219F8B2A176FB9AA00666305 /* UIKit.framework */; };
 		219F8B2D176FB9AA00666305 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219F8B2C176FB9AA00666305 /* Foundation.framework */; };
 		219F8B2F176FB9AA00666305 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219F8B2E176FB9AA00666305 /* CoreGraphics.framework */; };
@@ -129,6 +127,8 @@
 		21EA9CD5198640EE00F3D9E6 /* MPCloseButtonX.png in Resources */ = {isa = PBXBuildFile; fileRef = 21EA9C84198640EE00F3D9E6 /* MPCloseButtonX.png */; };
 		21EA9CD6198640EE00F3D9E6 /* MPCloseButtonX@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21EA9C85198640EE00F3D9E6 /* MPCloseButtonX@2x.png */; };
 		21EA9CD7198640EE00F3D9E6 /* MRAID.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 21EA9C86198640EE00F3D9E6 /* MRAID.bundle */; };
+		D2C0547C1A0B468A00E7F49A /* libFlurry_5.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C0547B1A0B468A00E7F49A /* libFlurry_5.2.0.a */; };
+		D2C0547E1A0B469700E7F49A /* libFlurryAds_5.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C0547D1A0B469700E7F49A /* libFlurryAds_5.2.0.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -374,6 +374,8 @@
 		21EA9C84198640EE00F3D9E6 /* MPCloseButtonX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MPCloseButtonX.png; sourceTree = "<group>"; };
 		21EA9C85198640EE00F3D9E6 /* MPCloseButtonX@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPCloseButtonX@2x.png"; sourceTree = "<group>"; };
 		21EA9C86198640EE00F3D9E6 /* MRAID.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MRAID.bundle; sourceTree = "<group>"; };
+		D2C0547B1A0B468A00E7F49A /* libFlurry_5.2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlurry_5.2.0.a; path = Flurry/libFlurry_5.2.0.a; sourceTree = "<group>"; };
+		D2C0547D1A0B469700E7F49A /* libFlurryAds_5.2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlurryAds_5.2.0.a; path = FlurryAds/libFlurryAds_5.2.0.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -381,6 +383,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2C0547E1A0B469700E7F49A /* libFlurryAds_5.2.0.a in Frameworks */,
+				D2C0547C1A0B468A00E7F49A /* libFlurry_5.2.0.a in Frameworks */,
 				212DA0FC1976BF5A002C2EAA /* CoreData.framework in Frameworks */,
 				2181741518E500850017CFEA /* CoreLocation.framework in Frameworks */,
 				2181740118E4F4890017CFEA /* Security.framework in Frameworks */,
@@ -390,7 +394,6 @@
 				213DE79D17C57E96006459FC /* CoreMedia.framework in Frameworks */,
 				219F8B5B176FBA8800666305 /* AdSupport.framework in Frameworks */,
 				213DE7A317C57F04006459FC /* EventKit.framework in Frameworks */,
-				219027E118E9E620009A624F /* libFlurry_4.4.0.a in Frameworks */,
 				213DE7A117C57EF9006459FC /* CoreTelephony.framework in Frameworks */,
 				213DE79F17C57E9E006459FC /* MediaPlayer.framework in Frameworks */,
 				21BC285A1856978100F5967E /* AdColony.framework in Frameworks */,
@@ -401,7 +404,6 @@
 				212DA0F91976B998002C2EAA /* libChartboost.a in Frameworks */,
 				219F8B5F176FBAA700666305 /* QuartzCore.framework in Frameworks */,
 				219F8B5D176FBA8D00666305 /* StoreKit.framework in Frameworks */,
-				219027DD18E9E578009A624F /* libFlurryAds_4.4.0.a in Frameworks */,
 				2181741018E4FFCF0017CFEA /* libvunglepub.a in Frameworks */,
 				219F8B59176FBA8100666305 /* SystemConfiguration.framework in Frameworks */,
 				219F8B2B176FB9AA00666305 /* UIKit.framework in Frameworks */,
@@ -516,6 +518,8 @@
 		219F8B29176FB9AA00666305 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D2C0547D1A0B469700E7F49A /* libFlurryAds_5.2.0.a */,
+				D2C0547B1A0B468A00E7F49A /* libFlurry_5.2.0.a */,
 				21EA9BCD198640EE00F3D9E6 /* MoPubSDK */,
 				212DA0FB1976BF5A002C2EAA /* CoreData.framework */,
 				219027DE18E9E620009A624F /* Flurry */,
@@ -1128,6 +1132,8 @@
 					"$(SRCROOT)/Flurry",
 					"$(SRCROOT)/Vungle",
 					"$(SRCROOT)/FlurryAds",
+					"$(PROJECT_DIR)/Flurry",
+					"$(PROJECT_DIR)/FlurryAds",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1155,6 +1161,8 @@
 					"$(SRCROOT)/Flurry",
 					"$(SRCROOT)/Vungle",
 					"$(SRCROOT)/FlurryAds",
+					"$(PROJECT_DIR)/Flurry",
+					"$(PROJECT_DIR)/FlurryAds",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
