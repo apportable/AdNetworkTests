@@ -13,7 +13,8 @@
 #import "VGVunglePub.h"
 #import "FlurryAdDelegate.h"
 
-@interface ViewController : UIViewController <GADInterstitialDelegate, GADBannerViewDelegate, VGVunglePubDelegate, FlurryAdDelegate> {
+@interface ViewController : UIViewController <GADInterstitialDelegate, GADBannerViewDelegate,
+                                            VGVunglePubDelegate, FlurryAdDelegate> {
     GADBannerView *mBannerView;
     GADInterstitial *mInterstitial;
 }

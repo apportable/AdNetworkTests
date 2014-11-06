@@ -14,7 +14,7 @@
 #import <RevMobAds/RevMobAds.h>
 #import "MPInterstitialAdController.h"
 
-@interface ViewController () <AdColonyAdDelegate, MPInterstitialAdControllerDelegate>
+@interface ViewController () <AdColonyAdDelegate, MPInterstitialAdControllerDelegate, ChartboostDelegate>
 
 @property (nonatomic) MPInterstitialAdController *interstitial;
 
@@ -31,6 +31,9 @@ NSString *adSpaceName = @"ios_ad";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [Chartboost sharedChartboost].delegate = self;
+    
     mBannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
 #ifdef APPORTABLE
     mBannerView.adUnitID = @"a151ef2cfd3e120";
@@ -148,6 +151,19 @@ NSString *adSpaceName = @"ios_ad";
     mInterstitial = nil;
     [self loadInterstitial];
 }
+
+#pragma mark - ChartboostDelegate
+
+- (void)didDismissInterstitial:(CBLocation)location
+{
+    NSLog(@"**** Chartboost Interstitial dismissed.");
+}
+
+- (void)didCloseInterstitial:(CBLocation)location
+{
+    NSLog(@"**** Chartboost Interstitial closed.");
+}
+
 
 #pragma mark - MPIntersitialAdControllerDelegate
 
