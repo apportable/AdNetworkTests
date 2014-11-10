@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "Chartboost.h"
+#import <Chartboost/Chartboost.h>
 #import "Flurry.h"
 #import "FlurryAds.h"
 #import <RevMobAds/RevMobAds.h>

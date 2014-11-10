@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "Chartboost.h"
+#import <Chartboost/Chartboost.h>
 #import "AppDelegate.h"
 #import "Flurry.h"
 #import "FlurryAds.h"
@@ -32,7 +32,6 @@ NSString *adSpaceName = @"ios_ad";
 {
     [super viewDidLoad];
     
-    [Chartboost sharedChartboost].delegate = self;
     
     mBannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
 #ifdef APPORTABLE
@@ -75,7 +74,7 @@ NSString *adSpaceName = @"ios_ad";
 }
 
 - (IBAction)showChartboost:(id)sender {
-    [[Chartboost sharedChartboost] showInterstitial];
+    [Chartboost showInterstitial:CBLocationDefault];
     [Flurry logEvent:@"showChartboost"];
 }
 

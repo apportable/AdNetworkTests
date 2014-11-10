@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		212DA0F81976B998002C2EAA /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 212DA0F41976B998002C2EAA /* CHANGELOG.md */; };
-		212DA0F91976B998002C2EAA /* libChartboost.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 212DA0F61976B998002C2EAA /* libChartboost.a */; };
-		212DA0FA1976B998002C2EAA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 212DA0F71976B998002C2EAA /* README.md */; };
 		212DA0FC1976BF5A002C2EAA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 212DA0FB1976BF5A002C2EAA /* CoreData.framework */; };
 		213DE79917C57E7A006459FC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213DE79817C57E7A006459FC /* AVFoundation.framework */; };
 		213DE79B17C57E86006459FC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213DE79A17C57E86006459FC /* CFNetwork.framework */; };
@@ -129,18 +126,10 @@
 		21EA9CD7198640EE00F3D9E6 /* MRAID.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 21EA9C86198640EE00F3D9E6 /* MRAID.bundle */; };
 		D2C0547C1A0B468A00E7F49A /* libFlurry_5.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C0547B1A0B468A00E7F49A /* libFlurry_5.2.0.a */; };
 		D2C0547E1A0B469700E7F49A /* libFlurryAds_5.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C0547D1A0B469700E7F49A /* libFlurryAds_5.2.0.a */; };
+		D2C054801A10A73100E7F49A /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C0547F1A10A73100E7F49A /* Chartboost.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		212DA0EF1976B998002C2EAA /* CBMoreAppsButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMoreAppsButton.h; sourceTree = "<group>"; };
-		212DA0F01976B998002C2EAA /* CBNewsfeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBNewsfeed.h; sourceTree = "<group>"; };
-		212DA0F11976B998002C2EAA /* CBNewsfeedUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBNewsfeedUI.h; sourceTree = "<group>"; };
-		212DA0F21976B998002C2EAA /* CBPostInstallAnalyticsTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBPostInstallAnalyticsTracker.h; sourceTree = "<group>"; };
-		212DA0F31976B998002C2EAA /* CBStory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBStory.h; sourceTree = "<group>"; };
-		212DA0F41976B998002C2EAA /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
-		212DA0F51976B998002C2EAA /* Chartboost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chartboost.h; sourceTree = "<group>"; };
-		212DA0F61976B998002C2EAA /* libChartboost.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libChartboost.a; sourceTree = "<group>"; };
-		212DA0F71976B998002C2EAA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		212DA0FB1976BF5A002C2EAA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		213DE79817C57E7A006459FC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		213DE79A17C57E86006459FC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -376,6 +365,7 @@
 		21EA9C86198640EE00F3D9E6 /* MRAID.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MRAID.bundle; sourceTree = "<group>"; };
 		D2C0547B1A0B468A00E7F49A /* libFlurry_5.2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlurry_5.2.0.a; path = Flurry/libFlurry_5.2.0.a; sourceTree = "<group>"; };
 		D2C0547D1A0B469700E7F49A /* libFlurryAds_5.2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlurryAds_5.2.0.a; path = FlurryAds/libFlurryAds_5.2.0.a; sourceTree = "<group>"; };
+		D2C0547F1A10A73100E7F49A /* Chartboost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Chartboost.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -383,6 +373,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2C054801A10A73100E7F49A /* Chartboost.framework in Frameworks */,
 				D2C0547E1A0B469700E7F49A /* libFlurryAds_5.2.0.a in Frameworks */,
 				D2C0547C1A0B468A00E7F49A /* libFlurry_5.2.0.a in Frameworks */,
 				212DA0FC1976BF5A002C2EAA /* CoreData.framework in Frameworks */,
@@ -401,7 +392,6 @@
 				213DE79917C57E7A006459FC /* AVFoundation.framework in Frameworks */,
 				21D08589179F5FAC00B588DF /* MessageUI.framework in Frameworks */,
 				21D08587179F5FA400B588DF /* AudioToolbox.framework in Frameworks */,
-				212DA0F91976B998002C2EAA /* libChartboost.a in Frameworks */,
 				219F8B5F176FBAA700666305 /* QuartzCore.framework in Frameworks */,
 				219F8B5D176FBA8D00666305 /* StoreKit.framework in Frameworks */,
 				2181741018E4FFCF0017CFEA /* libvunglepub.a in Frameworks */,
@@ -417,22 +407,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		212DA0EE1976B998002C2EAA /* Chartboost */ = {
-			isa = PBXGroup;
-			children = (
-				212DA0EF1976B998002C2EAA /* CBMoreAppsButton.h */,
-				212DA0F01976B998002C2EAA /* CBNewsfeed.h */,
-				212DA0F11976B998002C2EAA /* CBNewsfeedUI.h */,
-				212DA0F21976B998002C2EAA /* CBPostInstallAnalyticsTracker.h */,
-				212DA0F31976B998002C2EAA /* CBStory.h */,
-				212DA0F41976B998002C2EAA /* CHANGELOG.md */,
-				212DA0F51976B998002C2EAA /* Chartboost.h */,
-				212DA0F61976B998002C2EAA /* libChartboost.a */,
-				212DA0F71976B998002C2EAA /* README.md */,
-			);
-			path = Chartboost;
-			sourceTree = "<group>";
-		};
 		2181740218E4FFCF0017CFEA /* Vungle */ = {
 			isa = PBXGroup;
 			children = (
@@ -518,6 +492,7 @@
 		219F8B29176FB9AA00666305 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D2C0547F1A10A73100E7F49A /* Chartboost.framework */,
 				D2C0547D1A0B469700E7F49A /* libFlurryAds_5.2.0.a */,
 				D2C0547B1A0B468A00E7F49A /* libFlurry_5.2.0.a */,
 				21EA9BCD198640EE00F3D9E6 /* MoPubSDK */,
@@ -542,7 +517,6 @@
 				21D08582179F5F5200B588DF /* GADRequestError.h */,
 				21D08583179F5F5200B588DF /* README.txt */,
 				21D08584179F5F5200B588DF /* libGoogleAdMobAds.a */,
-				212DA0EE1976B998002C2EAA /* Chartboost */,
 				219F8B56176FBA6A00666305 /* RevMobAds.framework */,
 				219F8B2A176FB9AA00666305 /* UIKit.framework */,
 				219F8B2C176FB9AA00666305 /* Foundation.framework */,
@@ -928,7 +902,6 @@
 			files = (
 				2181741218E4FFCF0017CFEA /* vg_button_mute_plain.png in Resources */,
 				219F8B35176FB9AA00666305 /* InfoPlist.strings in Resources */,
-				212DA0FA1976B998002C2EAA /* README.md in Resources */,
 				219F8B3D176FB9AA00666305 /* Default.png in Resources */,
 				2181741118E4FFCF0017CFEA /* vg_button_close.png in Resources */,
 				219F8B3F176FB9AA00666305 /* Default@2x.png in Resources */,
@@ -938,7 +911,6 @@
 				219F8B41176FB9AA00666305 /* Default-568h@2x.png in Resources */,
 				21EA9CD6198640EE00F3D9E6 /* MPCloseButtonX@2x.png in Resources */,
 				219F8B47176FB9AA00666305 /* ViewController.xib in Resources */,
-				212DA0F81976B998002C2EAA /* CHANGELOG.md in Resources */,
 				2181741318E4FFCF0017CFEA /* vg_button_mute_selected.png in Resources */,
 				21EA9C8E198640EE00F3D9E6 /* MPAdBrowserController.xib in Resources */,
 			);
@@ -1119,6 +1091,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "adnetworktests/adnetworktests-Prefix.pch";
@@ -1128,7 +1101,6 @@
 					"\\\\\\\"$(SRCROOT)/Chartboost\\\\\\\"",
 					"$(SRCROOT)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Chartboost",
 					"$(SRCROOT)/Flurry",
 					"$(SRCROOT)/Vungle",
 					"$(SRCROOT)/FlurryAds",
@@ -1148,6 +1120,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "adnetworktests/adnetworktests-Prefix.pch";
@@ -1157,7 +1130,6 @@
 					"\\\\\\\"$(SRCROOT)/Chartboost\\\\\\\"",
 					"$(SRCROOT)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Chartboost",
 					"$(SRCROOT)/Flurry",
 					"$(SRCROOT)/Vungle",
 					"$(SRCROOT)/FlurryAds",
