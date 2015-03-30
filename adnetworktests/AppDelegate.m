@@ -24,9 +24,9 @@
 #endif
     //Chartboost config
 #ifdef APPORTABLE
-    [Chartboost startWithAppId:@"5125833216ba47017000000c" appSignature:@"cb4f77e909672121e3011eae23f0be0887659aeb" delegate:self];
+    [Chartboost startWithAppId:@"5125833216ba47017000000c" appSignature:@"cb4f77e909672121e3011eae23f0be0887659aeb" delegate:nil];
 #else
-    [Chartboost startWithAppId:@"5125786a17ba476d5000002d" appSignature:@"6c43009ec3ebccbd2ce7053e3313a78b4a3f4c07" delegate:self];
+    [Chartboost startWithAppId:@"5125786a17ba476d5000002d" appSignature:@"6c43009ec3ebccbd2ce7053e3313a78b4a3f4c07" delegate:nil];
 #endif
 
     //Revmob config
@@ -103,23 +103,6 @@
 
 - ( void ) onAdColonyV4VCReward:(BOOL)success currencyName:(NSString*)currencyName currencyAmount:(int)amount inZone:(NSString*)zoneID {
     NSLog(@"adcolony recieved onAdColonyV4VCReward in app success: %d currencyName: %@ currencyAmount: %d", success, currencyName, amount);
-}
-
-#pragma mark - ChartboostDelegate
-
-- (void)didDismissInterstitial:(CBLocation)location
-{
-    NSLog(@"**** Chartboost Interstitial dismissed.");
-}
-
-- (void)didCloseInterstitial:(CBLocation)location
-{
-    NSLog(@"**** Chartboost Interstitial closed.");
-}
-
-- (void)didDisplayInterstitial:(CBLocation)location
-{
-    NSLog(@"**** Chartboost Interstitial displayed.");
 }
 
 @end

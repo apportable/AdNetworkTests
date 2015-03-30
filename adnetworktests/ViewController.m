@@ -151,6 +151,19 @@ NSString *adSpaceName = @"ios_ad";
     [self loadInterstitial];
 }
 
+#pragma mark - ChartboostDelegate
+
+- (void)didDismissInterstitial:(CBLocation)location
+{
+    NSLog(@"**** Chartboost Interstitial dismissed.");
+}
+
+- (void)didCloseInterstitial:(CBLocation)location
+{
+    NSLog(@"**** Chartboost Interstitial closed.");
+}
+
+
 #pragma mark - MPIntersitialAdControllerDelegate
 
 - (void)interstitial:(GADInterstitial *)interstitial didFailToReceiveAdWithError:(GADRequestError *)error {
