@@ -11,8 +11,3 @@ Requirements:
 
 The latest documentation and code samples are available at:
 https://developers.google.com/mobile-ads-sdk/docs/
-
-Apportable documentation:
-------------------------
-
-http://docs.apportable.com/sample-apps.html#adnetworktests
