@@ -12,6 +12,13 @@
 		212DA0F81976B998002C2EAA /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 212DA0F41976B998002C2EAA /* CHANGELOG.md */; };
 		212DA0F91976B998002C2EAA /* libChartboost.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 212DA0F61976B998002C2EAA /* libChartboost.a */; };
 		212DA0FA1976B998002C2EAA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 212DA0F71976B998002C2EAA /* README.md */; };
+		010BC8971ACC8BEF00B4E370 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 010BC8961ACC8BEF00B4E370 /* WebKit.framework */; };
+		013D97261ACB25D800A5F8CB /* X_Black.png in Resources */ = {isa = PBXBuildFile; fileRef = 013D971F1ACB25D800A5F8CB /* X_Black.png */; };
+		013D97271ACB25D800A5F8CB /* X_Black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 013D97201ACB25D800A5F8CB /* X_Black@2x.png */; };
+		013D97281ACB25D800A5F8CB /* SSASDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 013D97251ACB25D800A5F8CB /* SSASDK.a */; };
+		013D972A1ACB2B9500A5F8CB /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013D97291ACB2B9500A5F8CB /* CoreVideo.framework */; };
+		013D972C1ACC744900A5F8CB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013D972B1ACC744900A5F8CB /* MobileCoreServices.framework */; };
+		013D97891ACC84B500A5F8CB /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 013D97881ACC84B500A5F8CB /* libz.dylib */; };
 		212DA0FC1976BF5A002C2EAA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 212DA0FB1976BF5A002C2EAA /* CoreData.framework */; };
 		213DE79917C57E7A006459FC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213DE79817C57E7A006459FC /* AVFoundation.framework */; };
 		213DE79B17C57E86006459FC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213DE79A17C57E86006459FC /* CFNetwork.framework */; };
@@ -44,7 +51,6 @@
 		21BC285A1856978100F5967E /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BC28591856978100F5967E /* AdColony.framework */; };
 		21BC285C18569BA700F5967E /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BC285B18569BA700F5967E /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		21BC285E18569BE000F5967E /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BC285D18569BE000F5967E /* EventKitUI.framework */; };
-		21BC286018569C4C00F5967E /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BC285F18569C4C00F5967E /* libz.1.2.5.dylib */; };
 		21D08587179F5FA400B588DF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21D08586179F5FA400B588DF /* AudioToolbox.framework */; };
 		21D08589179F5FAC00B588DF /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21D08588179F5FAC00B588DF /* MessageUI.framework */; };
 		21EA9C87198640EE00F3D9E6 /* MPBannerAdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21EA9BD3198640EE00F3D9E6 /* MPBannerAdManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -153,6 +159,15 @@
 		212DA0F51976B998002C2EAA /* Chartboost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chartboost.h; sourceTree = "<group>"; };
 		212DA0F61976B998002C2EAA /* libChartboost.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libChartboost.a; sourceTree = "<group>"; };
 		212DA0F71976B998002C2EAA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		010BC8961ACC8BEF00B4E370 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		013D971F1ACB25D800A5F8CB /* X_Black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = X_Black.png; sourceTree = "<group>"; };
+		013D97201ACB25D800A5F8CB /* X_Black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "X_Black@2x.png"; sourceTree = "<group>"; };
+		013D97221ACB25D800A5F8CB /* SupersonicAdsAdvertiser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SupersonicAdsAdvertiser.h; sourceTree = "<group>"; };
+		013D97231ACB25D800A5F8CB /* SupersonicAdsPublisher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SupersonicAdsPublisher.h; sourceTree = "<group>"; };
+		013D97251ACB25D800A5F8CB /* SSASDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = SSASDK.a; sourceTree = "<group>"; };
+		013D97291ACB2B9500A5F8CB /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		013D972B1ACC744900A5F8CB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		013D97881ACC84B500A5F8CB /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		212DA0FB1976BF5A002C2EAA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		213DE79817C57E7A006459FC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		213DE79A17C57E86006459FC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -384,12 +399,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				010BC8971ACC8BEF00B4E370 /* WebKit.framework in Frameworks */,
+				013D97891ACC84B500A5F8CB /* libz.dylib in Frameworks */,
+				013D972C1ACC744900A5F8CB /* MobileCoreServices.framework in Frameworks */,
+				013D972A1ACB2B9500A5F8CB /* CoreVideo.framework in Frameworks */,
 				D2C0547E1A0B469700E7F49A /* libFlurryAds_5.2.0.a in Frameworks */,
 				D2C0547C1A0B468A00E7F49A /* libFlurry_5.2.0.a in Frameworks */,
 				212DA0FC1976BF5A002C2EAA /* CoreData.framework in Frameworks */,
 				2181741518E500850017CFEA /* CoreLocation.framework in Frameworks */,
 				2181740118E4F4890017CFEA /* Security.framework in Frameworks */,
-				21BC286018569C4C00F5967E /* libz.1.2.5.dylib in Frameworks */,
 				21BC285C18569BA700F5967E /* Social.framework in Frameworks */,
 				21BC285E18569BE000F5967E /* EventKitUI.framework in Frameworks */,
 				213DE79D17C57E96006459FC /* CoreMedia.framework in Frameworks */,
@@ -406,6 +424,7 @@
 				219F8B5F176FBAA700666305 /* QuartzCore.framework in Frameworks */,
 				219F8B5D176FBA8D00666305 /* StoreKit.framework in Frameworks */,
 				2181741018E4FFCF0017CFEA /* libvunglepub.a in Frameworks */,
+				013D97281ACB25D800A5F8CB /* SSASDK.a in Frameworks */,
 				219F8B59176FBA8100666305 /* SystemConfiguration.framework in Frameworks */,
 				219F8B2B176FB9AA00666305 /* UIKit.framework in Frameworks */,
 				219F8B2D176FB9AA00666305 /* Foundation.framework in Frameworks */,
@@ -418,6 +437,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		013D971C1ACB25D800A5F8CB /* SSAMobileSDK */ = {
+			isa = PBXGroup;
+			children = (
+				013D971D1ACB25D800A5F8CB /* assets */,
+				013D97211ACB25D800A5F8CB /* headers */,
+				013D97241ACB25D800A5F8CB /* lib */,
+			);
+			path = SSAMobileSDK;
+			sourceTree = "<group>";
+		};
+		013D971D1ACB25D800A5F8CB /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				013D971E1ACB25D800A5F8CB /* images */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		013D971E1ACB25D800A5F8CB /* images */ = {
+			isa = PBXGroup;
+			children = (
+				013D971F1ACB25D800A5F8CB /* X_Black.png */,
+				013D97201ACB25D800A5F8CB /* X_Black@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		013D97211ACB25D800A5F8CB /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				013D97221ACB25D800A5F8CB /* SupersonicAdsAdvertiser.h */,
+				013D97231ACB25D800A5F8CB /* SupersonicAdsPublisher.h */,
+			);
+			path = headers;
+			sourceTree = "<group>";
+		};
+		013D97241ACB25D800A5F8CB /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				013D97251ACB25D800A5F8CB /* SSASDK.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 		01C633D01ACA2E280031F862 /* AdMob */ = {
 			isa = PBXGroup;
 			children = (
@@ -538,6 +601,11 @@
 			isa = PBXGroup;
 			children = (
 				01C633D01ACA2E280031F862 /* AdMob */,
+				010BC8961ACC8BEF00B4E370 /* WebKit.framework */,
+				013D97881ACC84B500A5F8CB /* libz.dylib */,
+				013D972B1ACC744900A5F8CB /* MobileCoreServices.framework */,
+				013D97291ACB2B9500A5F8CB /* CoreVideo.framework */,
+				013D971C1ACB25D800A5F8CB /* SSAMobileSDK */,
 				D2C0547D1A0B469700E7F49A /* libFlurryAds_5.2.0.a */,
 				D2C0547B1A0B468A00E7F49A /* libFlurry_5.2.0.a */,
 				21EA9BCD198640EE00F3D9E6 /* MoPubSDK */,
@@ -949,8 +1017,10 @@
 				21EA9CD6198640EE00F3D9E6 /* MPCloseButtonX@2x.png in Resources */,
 				219F8B47176FB9AA00666305 /* ViewController.xib in Resources */,
 				212DA0F81976B998002C2EAA /* CHANGELOG.md in Resources */,
+				013D97261ACB25D800A5F8CB /* X_Black.png in Resources */,
 				2181741318E4FFCF0017CFEA /* vg_button_mute_selected.png in Resources */,
 				21EA9C8E198640EE00F3D9E6 /* MPAdBrowserController.xib in Resources */,
+				013D97271ACB25D800A5F8CB /* X_Black@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1145,6 +1215,7 @@
 					"$(PROJECT_DIR)/Flurry",
 					"$(PROJECT_DIR)/FlurryAds",
 					"$(PROJECT_DIR)/AdMob",
+					"$(PROJECT_DIR)/SSAMobileSDK/lib",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1175,6 +1246,7 @@
 					"$(PROJECT_DIR)/Flurry",
 					"$(PROJECT_DIR)/FlurryAds",
 					"$(PROJECT_DIR)/AdMob",
+					"$(PROJECT_DIR)/SSAMobileSDK/lib",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

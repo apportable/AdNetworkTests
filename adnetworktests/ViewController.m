@@ -13,12 +13,18 @@
 #import "FlurryAds.h"
 #import <RevMobAds/RevMobAds.h>
 #import "MPInterstitialAdController.h"
+#import "SupersonicAdsAdvertiser.h"
+#import "SupersonicAdsPublisher.h"
 
-@interface ViewController () <AdColonyAdDelegate, MPInterstitialAdControllerDelegate, ChartboostDelegate>
+#define kSuperSonicAppKey @"2dea0439"
+#define kSuperSonicUserId @"demo"
+
+@interface ViewController () <AdColonyAdDelegate, MPInterstitialAdControllerDelegate, ChartboostDelegate, SSARewardedVideoDelegate>
 
 @property (nonatomic) MPInterstitialAdController *interstitial;
 
 @end
+SupersonicAdsPublisher *ssaAg;
 
 #ifdef APPORTABLE
 NSString *adSpaceName = @"android_ad";
@@ -52,7 +58,13 @@ NSString *adSpaceName = @"ios_ad";
     self.interstitial = [MPInterstitialAdController interstitialAdControllerForAdUnitId:@"0e60ee652c6c4badb36f912e82e51b81"];
     self.interstitial.delegate = self;
     [self.interstitial loadAd];
-    
+
+    ssaAg = [SupersonicAdsPublisher sharedInstance];
+    [ssaAg initRewardedVideoWithApplicationKey:kSuperSonicAppKey userId:kSuperSonicUserId delegate:self additionalParameters:nil];
+}
+
+- (NSUInteger)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskAll;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -109,6 +121,16 @@ NSString *adSpaceName = @"ios_ad";
         [VGVunglePub playIncentivizedAd:self animated:YES showClose:YES userTag:nil];
 //        [VGVunglePub playModalAd:self animated:YES];
         [Flurry logEvent:@"showVungle"];
+    }
+}
+
+- (IBAction)showSuperSonicAd:(id)sender {
+    NSLog(@"showSuperSonicAd");
+    if (supersonic_rewarded_video_available) {
+        // XXX
+        [ssaAg showRewardedVideo];
+    } else {
+        NSLog(@"SuperSonicAds Video loading ...");
     }
 }
 
@@ -266,6 +288,44 @@ static BOOL finished_last_vungle_video_ = NO;
 - (void)vungleAppStoreViewDidDisappear
 {
     NSLog(@"vungleAppStoreViewDidDisappear");
+}
+
+#pragma mark SuperSonic SSARewardedVideoDelegate
+static BOOL supersonic_rewarded_video_available = NO;
+
+- (void)ssaRewardedVideoDidUpdateAdUnits:(NSDictionary *)adUnitsInfo
+{
+    supersonic_rewarded_video_available = YES;
+    NSLog(@"ssaRewardedVideoDidUpdateAdUnits %@", adUnitsInfo);
+}
+- (void)ssaRewardedVideoNoMoreOffers
+{
+    supersonic_rewarded_video_available = NO;
+    NSLog(@"ssaRewardedVideoNoMoreOffers");
+}
+- (void)ssaRewardedVideoDidFailInitWithError:(NSError *)error
+{
+    NSLog(@"ssaRewardedVideoDidFailInitWithError %@", error);
+}
+- (void)ssaRewardedVideoWindowWillOpen
+{
+    NSLog(@"ssaRewardedVideoWindowWillOpen");
+}
+- (void)ssaRewardedVideoWindowDidClose
+{
+    NSLog(@"ssaRewardedVideoWindowDidClose");
+}
+- (void)ssaRewardedVideoDidFailShowWithError:(NSError *)error
+{
+    NSLog(@"ssaRewardedVideoDidFailShowWithError %@", error);
+}
+- (void)ssaRewardedVideoCallback:(NSString *)name parameters:(NSDictionary *)parameters
+{
+    NSLog(@"ssaRewardedVideoCallback, %@, %@", name, parameters);
+}
+- (void)ssaRewardedVideoDidReceiveCredit:(NSDictionary *)creditInfo
+{
+    NSLog(@"ssaRewardedVideoDidReceiveCredit %@", creditInfo);
 }
 
 #pragma mark flurry ad delegate
