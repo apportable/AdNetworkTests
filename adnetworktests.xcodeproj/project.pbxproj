@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		010BC8971ACC8BEF00B4E370 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 010BC8961ACC8BEF00B4E370 /* WebKit.framework */; };
+		013D97261ACB25D800A5F8CB /* X_Black.png in Resources */ = {isa = PBXBuildFile; fileRef = 013D971F1ACB25D800A5F8CB /* X_Black.png */; };
+		013D97271ACB25D800A5F8CB /* X_Black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 013D97201ACB25D800A5F8CB /* X_Black@2x.png */; };
+		013D97281ACB25D800A5F8CB /* SSASDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 013D97251ACB25D800A5F8CB /* SSASDK.a */; };
 		013D972A1ACB2B9500A5F8CB /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013D97291ACB2B9500A5F8CB /* CoreVideo.framework */; };
 		013D972C1ACC744900A5F8CB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013D972B1ACC744900A5F8CB /* MobileCoreServices.framework */; };
 		013D97891ACC84B500A5F8CB /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 013D97881ACC84B500A5F8CB /* libz.dylib */; };
@@ -135,6 +138,11 @@
 
 /* Begin PBXFileReference section */
 		010BC8961ACC8BEF00B4E370 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		013D971F1ACB25D800A5F8CB /* X_Black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = X_Black.png; sourceTree = "<group>"; };
+		013D97201ACB25D800A5F8CB /* X_Black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "X_Black@2x.png"; sourceTree = "<group>"; };
+		013D97221ACB25D800A5F8CB /* SupersonicAdsAdvertiser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SupersonicAdsAdvertiser.h; sourceTree = "<group>"; };
+		013D97231ACB25D800A5F8CB /* SupersonicAdsPublisher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SupersonicAdsPublisher.h; sourceTree = "<group>"; };
+		013D97251ACB25D800A5F8CB /* SSASDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = SSASDK.a; sourceTree = "<group>"; };
 		013D97291ACB2B9500A5F8CB /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		013D972B1ACC744900A5F8CB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		013D97881ACC84B500A5F8CB /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -406,6 +414,7 @@
 				219F8B5F176FBAA700666305 /* QuartzCore.framework in Frameworks */,
 				219F8B5D176FBA8D00666305 /* StoreKit.framework in Frameworks */,
 				2181741018E4FFCF0017CFEA /* libvunglepub.a in Frameworks */,
+				013D97281ACB25D800A5F8CB /* SSASDK.a in Frameworks */,
 				219F8B59176FBA8100666305 /* SystemConfiguration.framework in Frameworks */,
 				219F8B2B176FB9AA00666305 /* UIKit.framework in Frameworks */,
 				219F8B2D176FB9AA00666305 /* Foundation.framework in Frameworks */,
@@ -418,6 +427,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		013D971C1ACB25D800A5F8CB /* SSAMobileSDK */ = {
+			isa = PBXGroup;
+			children = (
+				013D971D1ACB25D800A5F8CB /* assets */,
+				013D97211ACB25D800A5F8CB /* headers */,
+				013D97241ACB25D800A5F8CB /* lib */,
+			);
+			path = SSAMobileSDK;
+			sourceTree = "<group>";
+		};
+		013D971D1ACB25D800A5F8CB /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				013D971E1ACB25D800A5F8CB /* images */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		013D971E1ACB25D800A5F8CB /* images */ = {
+			isa = PBXGroup;
+			children = (
+				013D971F1ACB25D800A5F8CB /* X_Black.png */,
+				013D97201ACB25D800A5F8CB /* X_Black@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		013D97211ACB25D800A5F8CB /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				013D97221ACB25D800A5F8CB /* SupersonicAdsAdvertiser.h */,
+				013D97231ACB25D800A5F8CB /* SupersonicAdsPublisher.h */,
+			);
+			path = headers;
+			sourceTree = "<group>";
+		};
+		013D97241ACB25D800A5F8CB /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				013D97251ACB25D800A5F8CB /* SSASDK.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 		01C633C21ACA2BD20031F862 /* AdMob */ = {
 			isa = PBXGroup;
 			children = (
@@ -525,6 +578,7 @@
 				013D97881ACC84B500A5F8CB /* libz.dylib */,
 				013D972B1ACC744900A5F8CB /* MobileCoreServices.framework */,
 				013D97291ACB2B9500A5F8CB /* CoreVideo.framework */,
+				013D971C1ACB25D800A5F8CB /* SSAMobileSDK */,
 				01C633C21ACA2BD20031F862 /* AdMob */,
 				D2C0547F1A10A73100E7F49A /* Chartboost.framework */,
 				D2C0547D1A0B469700E7F49A /* libFlurryAds_5.2.0.a */,
@@ -934,9 +988,11 @@
 				219F8B41176FB9AA00666305 /* Default-568h@2x.png in Resources */,
 				21EA9CD6198640EE00F3D9E6 /* MPCloseButtonX@2x.png in Resources */,
 				219F8B47176FB9AA00666305 /* ViewController.xib in Resources */,
+				013D97261ACB25D800A5F8CB /* X_Black.png in Resources */,
 				2181741318E4FFCF0017CFEA /* vg_button_mute_selected.png in Resources */,
 				01C633CF1ACA2BD30031F862 /* README.txt in Resources */,
 				21EA9C8E198640EE00F3D9E6 /* MPAdBrowserController.xib in Resources */,
+				013D97271ACB25D800A5F8CB /* X_Black@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1131,6 +1187,7 @@
 					"$(PROJECT_DIR)/Flurry",
 					"$(PROJECT_DIR)/FlurryAds",
 					"$(PROJECT_DIR)/AdMob",
+					"$(PROJECT_DIR)/SSAMobileSDK/lib",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1161,6 +1218,7 @@
 					"$(PROJECT_DIR)/Flurry",
 					"$(PROJECT_DIR)/FlurryAds",
 					"$(PROJECT_DIR)/AdMob",
+					"$(PROJECT_DIR)/SSAMobileSDK/lib",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
