@@ -24,7 +24,7 @@
 @property (nonatomic) MPInterstitialAdController *interstitial;
 
 @end
-SupersonicAdsPublisher *ssaAg;
+SupersonicAdsPublisher *ssaPub;
 
 #ifdef APPORTABLE
 NSString *adSpaceName = @"android_ad";
@@ -59,8 +59,16 @@ NSString *adSpaceName = @"ios_ad";
     self.interstitial.delegate = self;
     [self.interstitial loadAd];
 
-    ssaAg = [SupersonicAdsPublisher sharedInstance];
-    [ssaAg initRewardedVideoWithApplicationKey:kSuperSonicAppKey userId:kSuperSonicUserId delegate:self additionalParameters:nil];
+    ssaPub = [SupersonicAdsPublisher sharedInstance];
+    NSString *ssSDKVersion = [SupersonicAdsPublisher getSDKVersion];
+    NSLog(@"SuperSonic SDK Version %@", ssSDKVersion);
+    // http://developers.supersonicads.com/hc/en-us/articles/201321042-Integrating-Rewarded-Video#appendixc
+    NSDictionary *params = @{@"language": @"en", // Try 'fr'
+                             @"applicationUserGender": @"female",
+                             @"maxVideoLength": @"30", // Seconds
+                             @"custom_adnetworktestsparameter": @"space_spiders",
+    };
+    [ssaPub initRewardedVideoWithApplicationKey:kSuperSonicAppKey userId:kSuperSonicUserId delegate:self additionalParameters:params];
 }
 
 - (NSUInteger)supportedInterfaceOrientations {
@@ -126,12 +134,12 @@ NSString *adSpaceName = @"ios_ad";
 
 - (IBAction)showSuperSonicAd:(id)sender {
     NSLog(@"showSuperSonicAd");
-    if (supersonic_rewarded_video_available) {
-        // XXX
-        [ssaAg showRewardedVideo];
-    } else {
-        NSLog(@"SuperSonicAds Video loading ...");
-    }
+    NSLog(@"NICK: FIXME reenable callback notification for init fetch completion");
+//    if (supersonic_rewarded_video_available) {
+        [ssaPub showRewardedVideo];
+//    } else {
+//        NSLog(@"SuperSonicAds Video loading ...");
+//    }
 }
 
 - (IBAction)showFlurryAd:(id)sender {

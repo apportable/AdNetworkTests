@@ -62,7 +62,7 @@
     data.age = 27;
     data.gender = VGGenderFemale;
     [VGVunglePub startWithPubAppID:@"vungleTest" userData:data];
-    
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
